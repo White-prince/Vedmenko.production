@@ -5,7 +5,6 @@
     /*Добавление шрифта Bebasneue Bold*/
     font-family: "Bebasneue";
     src: url("fonts/BebasNeue_Bold.otf") format("opentype");
-    url("fonts/BebasNeue_Bold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -28,13 +27,14 @@ a.lin:hover {border-bottom: 1px double white;}
 
 .container {
     height: 100px;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .container > #bts_video {
+    width: 100%;
     min-width: 100%;
     min-height: 100%;
 }
@@ -82,8 +82,5 @@ ul{
 }
 p{
     position: absolute;
-    bottom: -50%;
+    bottom: 1%;
 }
-
-
-
