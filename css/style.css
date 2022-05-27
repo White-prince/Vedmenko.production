@@ -9,6 +9,11 @@
     font-style: normal;
     font-weight: normal;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: "Bebasneue";/* Подключаем шрифт */
     color: #fff;
@@ -18,6 +23,8 @@ body {
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
+    height: 100vh;
+    zoom:100%;
 }
 .lin{
     user-select: none;
@@ -26,17 +33,22 @@ body {
 }
 a.lin:hover {border-bottom: 1px double white;}
 
-.container {
+.content{
+    max-width: 100%;
+    max-height: 100%;
+}
+.container_v {
     height: 100px;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.container > #bts_video {
-    min-width: 100%;
+.container_v > #bts_video{
+    width: 100%;
     min-height: 100%;
+    min-width: 100%;
 }
 header{
     position: absolute;
@@ -67,11 +79,18 @@ ul{
     margin-right: 5px; /* Отступ слева */
     padding: 20px; /* Поля вокруг текста */
 }
+.text{
+    font-size: 48px;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .footer{
     position: absolute;
     height: 250px;
     color: #fff;
-    bottom: -50%;
+    bottom: -75%;
     width: 100%;
     margin: 0 auto;
 }
@@ -80,10 +99,34 @@ ul{
     align-items: center;
     justify-content: center;
 }
-p{
+.con{
     position: absolute;
     bottom: 1%;
 }
-
-
-
+.videos1{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 150%;
+    left: 20%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.videos2{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 150%;
+    left: 50%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.videos3{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 150%;
+    left: 80%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
