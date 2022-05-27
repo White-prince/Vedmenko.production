@@ -16,10 +16,9 @@ You can follow me on my social networks:
 
 # White-prince Webpage :globe_with_meridians:
 
-This site was created for the profile project.
+
 
 ## Preview :desktop_computer:
 
-[![Webpage](https://i.ibb.co/xHLpdd1/image.png)](https://white-prince.github.io/Homepage/)
 
 Hope this code helps you :crown:
