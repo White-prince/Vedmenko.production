@@ -11,7 +11,7 @@
 }
 * {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
 }
 body {
@@ -129,4 +129,7 @@ ul{
     left: 80%;
     background-color: black;
     transform: translate(-50%, -50%);
+}
+.fake_video {
+    background-color: #11ff11;
 }
