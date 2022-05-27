@@ -5,13 +5,138 @@ CSS файл портфолио
     max-width: 100%;
     max-height: 100%;
 }
-.container {
+.advertisement_videos{
+    padding-top: 2%;
     padding-left: 20%;
     padding-right: 20%;
-    height: 100px;
+    height: 100%;
     width: 100%;
+}
+.ad_videos {
+    height: 100%;
+    width: 100%;
+    padding-top: 9%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.ad_videos1{
     position: absolute;
-    top: 20%;
-    left: 50%;
+    width: 352px;
+    height: 198px;
+    left: 29%;
+    background-color: black;
     transform: translate(-50%, -50%);
+}
+.ad_videos2{
+    position: absolute;
+    width: 352px;
+    height: 198px;
+    left: 49.2%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.ad_videos3{
+    position: absolute;
+    width: 352px;
+    height: 198px;
+    left: 69.4%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.ad_videos4{
+    position: absolute;
+    width: 352px;
+    height: 198px;
+    left: 29%;
+    top: 53.8%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.ad_videos5{
+    position: absolute;
+    width: 352px;
+    height: 198px;
+    left: 49.2%;
+    top: 53.8%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.ad_videos6{
+    position: absolute;
+    width: 352px;
+    height: 198px;
+    left: 69.4%;
+    top: 53.8%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.music_videos {
+    padding-top: 21%;
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 100%;
+    width: 100%;
+
+}
+.music_videos1{
+    position: absolute;
+    width: 352px;
+    height: 198px;
+    top: 87.3%;
+    left: 29%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.music_videos2{
+    position: absolute;
+    width: 352px;
+    height: 198px;
+    top: 87.3%;
+    left: 49.2%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.music_videos3{
+    position: absolute;
+    width: 352px;
+    height: 198px;
+    top: 87.3%;
+    left: 69.4%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.music_videos4{
+    position: absolute;
+    width: 352px;
+    height: 198px;
+    left: 29%;
+    top: 112%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.music_videos5{
+    position: absolute;
+    width: 352px;
+    height: 198px;
+    left: 49.2%;
+    top: 112%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.music_videos6{
+    position: absolute;
+    width: 352px;
+    height: 198px;
+    left: 69.4%;
+    top: 112%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.footer_portfolio{
+    position: absolute;
+    height: 100px;
+    color: #fff;
+    bottom: -40%;
+    width: 100%;
+    margin: 0 auto;
 }
