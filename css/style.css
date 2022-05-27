@@ -1,0 +1,89 @@
+/*
+Основной css файл
+*/
+@font-face {
+    /*Добавление шрифта Bebasneue Bold*/
+    font-family: "Bebasneue";
+    src: url("fonts/BebasNeue_Bold.otf") format("opentype");
+    url("fonts/BebasNeue_Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body {
+    font-family: "Bebasneue";/* Подключаем шрифт */
+    color: #fff;
+    margin: 0;
+    background-color: #131313;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+.lin{
+    user-select: none;
+    text-decoration: none;
+    color: #fff;
+}
+a.lin:hover {border-bottom: 1px double white;}
+
+.container {
+    height: 100px;
+    width: 100vw;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container > #bts_video {
+    min-width: 100%;
+    min-height: 100%;
+}
+header{
+    position: absolute;
+    z-index: 1;
+    max-height: 250px;
+    max-width: 100vh;
+}
+.hat{
+    height: 250px;
+    width: 100vh;
+}
+.logo{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 200px;
+}
+ul{
+    position: absolute;
+    margin: 0;
+    padding: 4px; /* Значение полей */
+    top: 8%;
+    left: 30%;
+}
+.tp{
+    font-size: 28px;
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    padding: 20px; /* Поля вокруг текста */
+}
+.footer{
+    position: absolute;
+    height: 250px;
+    color: #fff;
+    bottom: -50%;
+    width: 100%;
+    margin: 0 auto;
+}
+.cop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    position: absolute;
+    bottom: 1%;
+}
+
+
+
