@@ -38,6 +38,7 @@ a.lin:hover {border-bottom: 1px double white;}
     max-height: 100%;
 }
 .container_v {
+    z-index: 0;
     height: 100px;
     width: 100%;
     position: absolute;
@@ -50,28 +51,36 @@ a.lin:hover {border-bottom: 1px double white;}
     min-height: 100%;
     min-width: 100%;
 }
-header{
-    position: absolute;
+.zag{
     z-index: 1;
-    max-height: 250px;
-    max-width: 100vh;
+    position: absolute;
+    font-size: 72px;
+    padding-top: 10%;
+    padding-left: 20%;
+}
+.zage{
+    z-index: 1;
+    position: absolute;
+    font-size: 52px;
+    padding-top: 20%;
+    padding-left: 20%;
 }
 .hat{
-    height: 250px;
-    width: 100vh;
+    height: 90px;
+    width: 100%;
 }
 .logo{
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 2%;
+    left: 20%;
     width: 200px;
 }
 ul{
     position: absolute;
     margin: 0;
     padding: 4px; /* Значение полей */
-    top: 8%;
-    left: 30%;
+    top: 3%;
+    right: 20%;
 }
 .tp{
     font-size: 28px;
