@@ -20,5 +20,6 @@ You can follow me on my social networks:
 
 ## Preview :desktop_computer:
 
+![Ved](https://github.com/White-prince/Vedmenko.production/blob/main/pre/pre_ved.png?raw=true)
 
 Hope this code helps you :crown:
