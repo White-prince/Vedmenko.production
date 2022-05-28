@@ -99,16 +99,21 @@ ul{
     transform: translate(-50%, -50%);
 }
 a.but {
-    font-size: 48px;
+    height: 50px;
+    width: 250px;
+    font-size: 32px;
     color: #fff;
     text-decoration: none;
     user-select: none;
     background: #131313;
-    padding: .3em 0.5em;
     outline: none;
     border-radius: 90px;
     position: absolute;
     left: 47%;
+    transition: .05s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 a.but:hover { background: #D0943A; } /* анимация */
 .text{
