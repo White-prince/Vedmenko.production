@@ -37,6 +37,9 @@ a.lin:hover {border-bottom: 1px double white;}
     max-width: 100%;
     max-height: 100%;
 }
+.container {
+    max-width: 1200px;
+}
 .container_v {
     z-index: 0;
     height: 100px;
@@ -101,7 +104,7 @@ a.but {
     text-decoration: none;
     user-select: none;
     background: #131313;
-    padding: .7em 2em;
+    padding: .3em 0.5em;
     outline: none;
     border-radius: 90px;
     position: absolute;
@@ -115,11 +118,49 @@ a.but:hover { background: #D0943A; } /* анимация */
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.text2{
+    font-size: 48px;
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text3{
+    font-size: 48px;
+    position: absolute;
+    top: 215%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.name{
+    font-size: 32px;
+    position: absolute;
+    top: 180%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+.info{
+    font-family: "Bebasneue";
+    font-size: 32px;
+    position: absolute;
+    top: 193%;
+    left: 60.5%;
+    transform: translate(-50%, -50%);
+}
+.block{
+    position: absolute;
+    width: 240px;
+    height: 300px;
+    border-radius: 50px;
+    top: 190%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+}
 .footer{
     position: absolute;
     height: 250px;
     color: #fff;
-    bottom: -150%;
+    bottom: -175%;
     width: 100%;
     margin: 0 auto;
 }
@@ -137,7 +178,7 @@ a.but:hover { background: #D0943A; } /* анимация */
     width: 400px;
     height: 250px;
     top: 150%;
-    left: 28%;
+    left: 28.5%;
     background-color: black;
     transform: translate(-50%, -50%);
 }
@@ -157,5 +198,41 @@ a.but:hover { background: #D0943A; } /* анимация */
     top: 150%;
     left: 71.5%;
     background-color: black;
+    transform: translate(-50%, -50%);
+}
+.circul{
+    position: absolute;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    top: 225%;
+    left: 15%;
+}
+.circul1{
+    position: absolute;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    top: 225%;
+    left: 55%;
+}
+.com{
+    position: absolute;
+    border-radius: 50px;
+    width: 400px;
+    height: 250px;
+    top: 250%;
+    left: 70%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+.com1{
+    position: absolute;
+    border-radius: 50px;
+    width: 400px;
+    height: 250px;
+    top: 250%;
+    left: 30%;
+    background-color: white;
     transform: translate(-50%, -50%);
 }
