@@ -88,6 +88,26 @@ ul{
     margin-right: 5px; /* Отступ слева */
     padding: 20px; /* Поля вокруг текста */
 }
+.butpos{
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+}
+a.but {
+    font-size: 48px;
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    background: #131313;
+    padding: .7em 2em;
+    outline: none;
+    border-radius: 90px;
+    position: absolute;
+    left: 47%;
+}
+a.but:hover { background: #D0943A; } /* анимация */
 .text{
     font-size: 48px;
     position: absolute;
@@ -99,7 +119,7 @@ ul{
     position: absolute;
     height: 250px;
     color: #fff;
-    bottom: -75%;
+    bottom: -150%;
     width: 100%;
     margin: 0 auto;
 }
@@ -117,7 +137,7 @@ ul{
     width: 400px;
     height: 250px;
     top: 150%;
-    left: 20%;
+    left: 28%;
     background-color: black;
     transform: translate(-50%, -50%);
 }
@@ -135,7 +155,7 @@ ul{
     width: 400px;
     height: 250px;
     top: 150%;
-    left: 80%;
+    left: 71.5%;
     background-color: black;
     transform: translate(-50%, -50%);
 }
