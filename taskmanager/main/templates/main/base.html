@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{%static 'css/style.css'%}">
+        <link rel="stylesheet" href="{%static 'css/style_mobile.css'%}">
+        <link rel="shortcut icon" href="{%static 'images/favicon.png'%}" type="image/png">
+        <script src="js/slide.js"></script>
+    </head>
+<body>
+    <div class="hat">
+        <a href="{% url 'main' %}"><img class="logo" src="{% static 'images/VPROD_MainLogo.png' %}" alt="Vedmenko_production"></a>
+        <ul>
+            <li class="tp"><a class="lin" href="{% url 'about' %}">О нас</a></li>
+            <li class="tp"><a class="lin" href="{% url 'contact' %}">Контакты</a></li>
+            <li class="tp"><a class="lin" href="{% url 'comment' %}">Отзывы</a></li>
+            <li class="tp"><a class="lin" href="{% url 'portfolio' %}">Портфолио</a></li>
+        </ul>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
