@@ -7,66 +7,108 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/style_mobile.css">
         <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+        <script src="js/slide.js"></script>
     </head>
     <body>
+        <!--Шапка-->
         <div class="hat">
             <a href="index.html"><img class="logo" src="images/VPROD_MainLogo.png" alt="Vedmenko_production"></a>
             <ul>
-                <li class="tp"><a class="lin" href="About_us.html">About us</a></li>
-                <li class="tp"><a class="lin" href="contacts.html">contacts</a></li>
-                <li class="tp"><a class="lin" href="comments.html">comments</a></li>
-                <li class="tp"><a class="lin" href="portfolio.html">portfolio</a></li>
+                <li class="tp"><a class="lin" href="about_us.html">О нас</a></li>
+                <li class="tp"><a class="lin" href="contacts.html">Контакты</a></li>
+                <li class="tp"><a class="lin" href="comments.html">Отзывы</a></li>
+                <li class="tp"><a class="lin" href="portfolio.html">Портфолио</a></li>
             </ul>
         </div>
+        <!--Шапка-end-->
+        <!--Основна-->
         <div class="content">
-            <p class="zag">ВИДЕОПРОДАКШН <br> "I. VEDMENKO"</p>
-            <p class="zage">CОЗДАНИЕ ЭФФЕКТНЫХ ВИДЕОРОЛИКОВ <br> ДЛЯ ВАШЕГО БИЗНЕСА</p>
-            <div class="container_v">
-                <video autoplay muted loop id="bts_video" class="fake_video">
-                    <source src="videos/Web-video.mp4" type="video/mp4">
-                </video>
-            </div>
             <div class="container">
+                <p class="m_text">ВИДЕОПРОДАКШН <br> "I. VEDMENKO"</p>
+                <p class="s_text">CОЗДАНИЕ ЭФФЕКТНЫХ ВИДЕОРОЛИКОВ <br> ДЛЯ ВАШЕГО БИЗНЕСА</p>
                 <div class="butpos">
-                    <a class="but" href="">Оставить заявку</a>
+                    <a class="but" href="contacts.html">Оставить заявку</a>
                 </div>
-                <div>
-                    <p class="text">More videos</p>
-                </div>
-                <div class="videos1">
-                    <img src="" alt="videos">
-                </div>
-                <div class="videos2">
-                    <img src="" alt="videos">
-                </div>
-                <div class="videos3">
-                    <img src="" alt="videos">
+            <!--Видео ролик-->
+                <div class="container_v">
+                    <video autoplay muted loop id="bts_video" class="fake_video">
+                        <source src="videos/Web-video.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <p class="text2">TEAM</p>
-            <p class="name">Andrey</p>
-            <pre class="info">Best prorammers in world
-He say: "Think differently"
-If you are ready start
-Don't worry be happy</pre>
-            <img class="block" src="images/and.png" alt="and">
-        </div>
-        <div class="container">
-            <p class="text3">COMMENTS</p>
-            <img class="circul" src="images/i.jpg" alt="Fp">
-            <img class="circul1" src="images/tdu4GQdsq0E.jpg" alt="Sp">
-            <div class="com">
-                <p style="color: #131313">text text text text text</p>
+            <!--Видео ролик-end-->
+            <!--Видео раздел-->
+            <div class="container">
+                <div class="text_more">
+                    <p class="text">Больше видео</p>
+                </div>
+                <div class="video_pos_one">
+                    <div class="videos">
+                        <video src="###" poster="images/videos_prewie.jpg" controls></video>
+                    </div>
+                </div>
+                <div class="video_pos_two">
+                    <div class="videos">
+                        <video src="###" poster="images/videos_prewie.jpg" controls></video>
+                    </div>
+                </div>
+                <div class="video_pos_three">
+                    <div class="videos">
+                        <video src="###" poster="images/videos_prewie.jpg" controls></video>
+                    </div>
+                </div>
             </div>
-            <div class="com1">
-                <p style="color: #131313">text text text text text</p>
+            <!--Видео раздел-end-->
+            <!--Слайды-->
+            <div class="text_team">
+                <p class="text">Наша команда</p>
             </div>
+            <div class="container_pos">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/prewie_max.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/prewie_ilia.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/prewie_team.jpg" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <!--Слайды-end-->
+            <!--Комменты-->
+            <div class="container">
+                <div class="text_com">
+                    <p class="text">Комментарии</p>
+                </div>
+                <div class="com_pos">
+                    <img class="circul" src="images/i.jpg" alt="Fp">
+                    <img class="circul1" src="images/tdu4GQdsq0E.jpg" alt="Sp">
+                    <div class="com">
+                        <p class="text_in_com">Лучшая команда по сьемкам.</p>
+                    </div>
+                    <div class="com1">
+                        <p class="text_in_com">Работы выполняют быстро и хорошо.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Комменты-end-->
         </div>
+        <!--Основна-end-->
+        <!--Подвал-->
         <div class="footer">
             <div class="cop">
                 <p class="con">&copy; 2022. All Rights Reserved. Design by <a class="lin" href="https://github.com/White-prince">White-prince.</a></p>
             </div>
         </div>
+        <!--Подвал-end-->
     </body>
