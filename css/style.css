@@ -60,6 +60,7 @@ a.lin:hover {border-bottom: 1px double white;}
 .hat{
     height: 95px;
     width: 100%;
+    max-width: 1200px;
 }
 .logo{
     position: absolute;
@@ -90,6 +91,7 @@ ul{
     z-index: 1;
 }
 a.but {
+    height: 50px;
     color: #fff;
     text-decoration: none;
     user-select: none;
