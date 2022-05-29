@@ -1,3 +1,103 @@
 /*
 Контакты css файл
 */
+/*Кнопка*/
+.button_pos{
+    font-size: 18px;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+a.button{
+    text-decoration: none;
+    user-select: none;
+    background: #D0943A;
+    outline: none;
+    padding: .7em 1em;
+    border-radius: 90px;
+    transition: .05s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eff{
+    color: #fff;
+}
+a.eff:hover { border-bottom: solid 2px white; }
+/*Соц-сети*/
+.vibe{
+    width: 65px;
+    height: 65px;
+}
+.vibe_pos_one{
+    position: absolute;
+    top: 75%;
+    left: 20%;
+}
+.vibe_pos_twe{
+    position: absolute;
+    top: 75%;
+    left: 30%;
+}
+.vibe_pos_tree{
+    position: absolute;
+    top: 75%;
+    left: 40%;
+}
+/*Текст*/
+.main{
+    position: absolute;
+    top: 15%;
+    left: 19%;
+}
+.fore{
+    font-size: 32px;
+    position: absolute;
+    top: 25%;
+    left: 19%;
+}
+.retr{
+    font-size: 20px;
+    width: 200px;
+    position: absolute;
+    top: 30%;
+    left: 19%;
+    border-bottom: solid 2px #D0943A;
+}
+.retr_one{
+    font-size: 20px;
+    width: 200px;
+    position: absolute;
+    top: 40%;
+    left: 19%;
+    border-bottom: solid 2px #D0943A;
+}
+.retr_two{
+    font-size: 20px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    border-bottom: solid 2px #D0943A;
+}
+/*Превью фото*/
+.photo{
+    position: absolute;
+    top: 47%;
+    left: 60%;
+    background-color: white;
+    width: 350px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+}
+
+/*Подвал*/
+.footer_con{
+    position: absolute;
+    height: 20px;
+    color: #fff;
+    bottom: 1%;
+    width: 100%;
+    margin: 0 auto;
+}
