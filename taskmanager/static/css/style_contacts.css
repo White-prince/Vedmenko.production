@@ -3,13 +3,13 @@
 */
 /*Кнопка*/
 .button_pos{
-    font-size: 18px;
     position: absolute;
     top: 65%;
     left: 40%;
     transform: translate(-50%, -50%);
 }
 a.button{
+    font-size: 24px;
     text-decoration: none;
     user-select: none;
     background: #D0943A;
@@ -52,34 +52,37 @@ a.eff:hover { border-bottom: solid 2px white; }
     left: 19%;
 }
 .fore{
-    font-size: 32px;
+    font-size: 40px;
     position: absolute;
     top: 25%;
     left: 19%;
 }
 .retr{
-    font-size: 20px;
-    width: 200px;
+    font-size: 32px;
+    width: 500px;
     position: absolute;
-    top: 30%;
+    top: 33%;
     left: 19%;
     border-bottom: solid 2px #D0943A;
 }
 .retr_one{
-    font-size: 20px;
-    width: 200px;
+    font-size: 32px;
+    width: 500px;
     position: absolute;
-    top: 40%;
+    top: 43%;
     left: 19%;
     border-bottom: solid 2px #D0943A;
 }
 .retr_two{
-    font-size: 20px;
-    width: 200px;
+    font-size: 32px;
+    width: 500px;
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 19%;
     border-bottom: solid 2px #D0943A;
+}
+.tern{
+    color: #D0943A;
 }
 /*Превью фото*/
 .photo{

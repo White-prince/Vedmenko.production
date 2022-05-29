@@ -1,30 +1,14 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vedmenko production</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style_contacts.css">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
-</head>
-<body>
-<header>
-    <div class="hat">
-        <a href="index.html"><img class="logo" src="images/VPROD_MainLogo.png" alt="Vedmenko_production"></a>
-        <ul>
-            <li class="tp"><a class="lin" href="about_us.html">О нас</a></li>
-            <li class="tp"><a class="lin" href="contacts.html">Контакты</a></li>
-            <li class="tp"><a class="lin" href="comments.html">Отзывы</a></li>
-            <li class="tp"><a class="lin" href="portfolio.html">Портфолио</a></li>
-        </ul>
-    </div>
-</header>
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}
+Vedmenko production
+{% endblock %}
+{% block content %}
     <div class="container">
         <div class="main">
-            <p class="text">КАК С НАМИ СВЯЗАТЬСЯ? ПРОСТО!</p>
+            <p class="text">КАК С НАМИ СВЯЗАТЬСЯ<span class="tern">?</span> ПРОСТО<span class="tern">!</span> </p>
         </div>
-        <p class="fore">ЗАДАЙТЕ СВОЙ ВОПРОС:</p>
+        <p class="fore">ЗАДАЙТЕ СВОЙ ВОПРОС <span class="tern">:</span></p>
         <p class="retr">ВАШЕ ИМЯ</p>
         <p class="retr_one">E-MAIL</p>
         <p class="retr_two">СООБЩЕНИЕ</p>
@@ -36,13 +20,13 @@
     </div>
     <div>
         <div class="vibe_pos_one">
-            <a href="###"><img class="vibe" src="images/INV.png" alt="preview"></a>
+            <a href="###"><img class="vibe" src="{% static 'images/INV.png' %}" alt="preview"></a>
         </div>
         <div class="vibe_pos_twe">
-            <a href="###"><img class="vibe" src="images/TGV.png" alt="preview"></a>
+            <a href="###"><img class="vibe" src="{% static 'images/TGV.png' %}" alt="preview"></a>
         </div>
         <div class="vibe_pos_tree">
-            <a href="###"><img class="vibe" src="images/VKV.png" alt="preview"></a>
+            <a href="###"><img class="vibe" src="{% static 'images/VKV.png' %}" alt="preview"></a>
         </div>
     </div>
     <div class="photo">
@@ -53,5 +37,4 @@
             <p class="con">&copy; 2022. All Rights Reserved. Design by <a class="lin" href="https://github.com/White-prince">White-prince.</a></p>
         </div>
     </div>
-</body>
-</html>
+{% endblock %}

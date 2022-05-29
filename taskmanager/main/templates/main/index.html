@@ -3,8 +3,6 @@
 {% block title %}
 Vedmenko production
 {% endblock %}
-<!DOCTYPE html>
-<html lang="en">
 {% block content %}
         <!--Основна-->
         <div class="content">
@@ -17,7 +15,7 @@ Vedmenko production
             <!--Видео ролик-->
                 <div class="container_v">
                     <video autoplay muted loop id="bts_video" class="fake_video">
-                        <source src="videos/Web-video.mp4" type="video/mp4">
+                        <source src="{% static 'videos/Web-video.mp4'%}" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -29,17 +27,17 @@ Vedmenko production
                 </div>
                 <div class="video_pos_one">
                     <div class="videos">
-                        <video src="###" poster="images/videos_prewie.jpg" controls></video>
+                        <video src="###" poster="{% static 'images/videos_prewie.jpg'%}" controls></video>
                     </div>
                 </div>
                 <div class="video_pos_two">
                     <div class="videos">
-                        <video src="###" poster="images/videos_prewie.jpg" controls></video>
+                        <video src="###" poster="{% static 'images/videos_prewie.jpg'%}" controls></video>
                     </div>
                 </div>
                 <div class="video_pos_three">
                     <div class="videos">
-                        <video src="###" poster="images/videos_prewie.jpg" controls></video>
+                        <video src="###" poster="{% static 'images/videos_prewie.jpg'%}" controls></video>
                     </div>
                 </div>
             </div>
@@ -51,13 +49,13 @@ Vedmenko production
             <div class="container_pos">
                 <div class="slideshow-container">
                     <div class="mySlides fade">
-                        <img src="images/prewie_max.jpg" style="width:100%">
+                        <img src="{% static 'images/prewie_max.jpg'%}" style="width:100%">
                     </div>
                     <div class="mySlides fade">
-                        <img src="images/prewie_ilia.jpg" style="width:100%">
+                        <img src="{% static 'images/prewie_ilia.jpg'%}" style="width:100%">
                     </div>
                     <div class="mySlides fade">
-                        <img src="images/prewie_team.jpg" style="width:100%">
+                        <img src="{% static 'images/prewie_team.jpg'%}" style="width:100%">
                     </div>
                     <a class="prev" onclick="plusSlides(-1)">❮</a>
                     <a class="next" onclick="plusSlides(1)">❯</a>
@@ -76,8 +74,8 @@ Vedmenko production
                     <p class="text">Комментарии</p>
                 </div>
                 <div class="com_pos">
-                    <img class="circul" src="images/i.jpg" alt="Fp">
-                    <img class="circul1" src="images/tdu4GQdsq0E.jpg" alt="Sp">
+                    <img class="circul" src="{% static 'images/i.jpg'%}" alt="Fp">
+                    <img class="circul1" src="{% static 'images/tdu4GQdsq0E.jpg'%}" alt="Sp">
                     <div class="com">
                         <p class="text_in_com">Лучшая команда по сьемкам.</p>
                     </div>
@@ -96,6 +94,4 @@ Vedmenko production
             </div>
         </div>
         <!--Подвал-end-->
-    </body>
-</html>
 {% endblock %}
