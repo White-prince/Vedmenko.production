@@ -15,24 +15,25 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Bebasneue";/* Подключаем шрифт */
+    font-family: "Bebasneue";
     color: #fff;
     margin: 0;
     background-color: #131313;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
     height: 100vh;
     zoom:100%;
 }
+/*Ссылки*/
 .lin{
     user-select: none;
     text-decoration: none;
     color: #fff;
 }
 a.lin:hover {border-bottom: 1px double white;}
-
+/*Основа*/
 .content{
     max-width: 100%;
     max-height: 100%;
@@ -40,6 +41,7 @@ a.lin:hover {border-bottom: 1px double white;}
 .container {
     max-width: 1200px;
 }
+/*Видео*/
 .container_v {
     z-index: 0;
     height: 100px;
@@ -54,22 +56,9 @@ a.lin:hover {border-bottom: 1px double white;}
     min-height: 100%;
     min-width: 100%;
 }
-.zag{
-    z-index: 1;
-    position: absolute;
-    font-size: 72px;
-    padding-top: 10%;
-    padding-left: 20%;
-}
-.zage{
-    z-index: 1;
-    position: absolute;
-    font-size: 52px;
-    padding-top: 20%;
-    padding-left: 20%;
-}
+/*Шапка*/
 .hat{
-    height: 90px;
+    height: 95px;
     width: 100%;
 }
 .logo{
@@ -81,91 +70,209 @@ a.lin:hover {border-bottom: 1px double white;}
 ul{
     position: absolute;
     margin: 0;
-    padding: 4px; /* Значение полей */
+    padding: 4px;
     top: 3%;
     right: 20%;
 }
 .tp{
     font-size: 28px;
-    display: inline; /* Отображать как строчный элемент */
-    margin-right: 5px; /* Отступ слева */
-    padding: 20px; /* Поля вокруг текста */
+    display: inline;
+    margin-right: 5px;
+    padding: 20px;
 }
+/*Кнопка*/
 .butpos{
+    font-size: 28px;
     position: absolute;
-    width: 100%;
     top: 65%;
-    left: 23%;
+    left: 25%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }
 a.but {
-    height: 50px;
-    width: 250px;
-    font-size: 32px;
     color: #fff;
     text-decoration: none;
     user-select: none;
     background: #131313;
     outline: none;
+    padding: .7em 1em;
     border-radius: 90px;
-    position: absolute;
-    left: 47%;
     transition: .05s linear;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-a.but:hover { background: #D0943A; } /* анимация */
+a.but:hover { background: #D0943A; }
+/*Раздел с видео*/
+.videos{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+.video_pos_one{
+    position: absolute;
+    top: 150%;
+    left: 25%;
+}
+.video_pos_two{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+}
+.video_pos_three{
+    position: absolute;
+    top: 150%;
+    left: 75%;
+}
+/*Коменты*/
+.com_pos{
+    position: absolute;
+    max-width: 100%;
+    width: 1200px;
+    height: 400px;
+    top: 280%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.circul{
+    position: absolute;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+.circul1{
+    position: absolute;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+.com{
+    position: absolute;
+    background-color: white;
+    border-radius: 50px;
+    width: 400px;
+    height: 250px;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+.com1{
+    position: absolute;
+    background-color: white;
+    border-radius: 50px;
+    width: 400px;
+    height: 250px;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+/* Слайды Команды */
+.container_pos{
+    position: absolute;
+    width: 1080px;
+    height: 600px;
+    top: 210%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slideshow-container {
+    max-width: 1080px;
+    position: relative;
+    margin: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.1s;
+    animation-name: fade;
+    animation-duration: 0.1s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+/*Текст*/
 .text{
     font-size: 48px;
+}
+.m_text{
+    z-index: 1;
+    position: absolute;
+    font-size: 72px;
+    top: 35%;
+    left: 29.5%;
+    transform: translate(-50%, -50%);
+}
+.s_text{
+    z-index: 1;
+    position: absolute;
+    font-size: 52px;
+    top: 50%;
+    left: 36.5%;
+    transform: translate(-50%, -50%);
+}
+.text_more{
     position: absolute;
     top: 130%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.text2{
-    font-size: 48px;
+.text_com{
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text_team{
     position: absolute;
     top: 170%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.text3{
-    font-size: 48px;
-    position: absolute;
-    top: 215%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.text_in_com{
+    font-size: 24px;
+    color: #131313;
+    padding: 1em;
 }
-.name{
-    font-size: 32px;
-    position: absolute;
-    top: 180%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-}
-.info{
-    font-family: "Bebasneue";
-    font-size: 32px;
-    position: absolute;
-    top: 193%;
-    left: 60.5%;
-    transform: translate(-50%, -50%);
-}
-.block{
-    position: absolute;
-    width: 240px;
-    height: 300px;
-    border-radius: 50px;
-    top: 190%;
-    left: 43%;
-    transform: translate(-50%, -50%);
-}
+/*Подвал*/
 .footer{
     position: absolute;
     height: 250px;
     color: #fff;
-    bottom: -175%;
+    bottom: -210%;
     width: 100%;
     margin: 0 auto;
 }
@@ -177,67 +284,4 @@ a.but:hover { background: #D0943A; } /* анимация */
 .con{
     position: absolute;
     bottom: 1%;
-}
-.videos1{
-    position: absolute;
-    width: 400px;
-    height: 250px;
-    top: 150%;
-    left: 28.5%;
-    background-color: black;
-    transform: translate(-50%, -50%);
-}
-.videos2{
-    position: absolute;
-    width: 400px;
-    height: 250px;
-    top: 150%;
-    left: 50%;
-    background-color: black;
-    transform: translate(-50%, -50%);
-}
-.videos3{
-    position: absolute;
-    width: 400px;
-    height: 250px;
-    top: 150%;
-    left: 71.5%;
-    background-color: black;
-    transform: translate(-50%, -50%);
-}
-.circul{
-    position: absolute;
-    border-radius: 100px;
-    width: 60px;
-    height: 60px;
-    top: 225%;
-    left: 15%;
-}
-.circul1{
-    position: absolute;
-    border-radius: 100px;
-    width: 60px;
-    height: 60px;
-    top: 225%;
-    left: 55%;
-}
-.com{
-    position: absolute;
-    border-radius: 50px;
-    width: 400px;
-    height: 250px;
-    top: 250%;
-    left: 70%;
-    background-color: white;
-    transform: translate(-50%, -50%);
-}
-.com1{
-    position: absolute;
-    border-radius: 50px;
-    width: 400px;
-    height: 250px;
-    top: 250%;
-    left: 30%;
-    background-color: white;
-    transform: translate(-50%, -50%);
 }
