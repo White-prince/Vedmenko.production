@@ -2,14 +2,13 @@
 Основной css файл
 */
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 body {
     font-family: 'Montserrat', Thin;
     color: #fff;
-    margin: 0;
     background-color: #131313;
     -moz-background-size: 100%;
     -webkit-background-size: 100%;
@@ -27,10 +26,12 @@ body {
 a.lin:hover {border-bottom: 1px double white;}
 /*Основа*/
 .content{
-    max-width: 100%;
+    width: 100%;
+    max-width: 1200px;
     max-height: 100%;
 }
 .container {
+    width: 100%;
     max-width: 1200px;
 }
 /*Видео*/
@@ -56,8 +57,7 @@ a.lin:hover {border-bottom: 1px double white;}
 }
 .logo{
     position: absolute;
-    top: 2%;
-    left: 20%;
+    top: 15px;
     width: 200px;
 }
 ul{
@@ -68,33 +68,29 @@ ul{
     right: 20%;
 }
 .tp{
-    font-size: 28px;
+    font-size: 20px;
     display: inline;
     margin-right: 5px;
     padding: 20px;
 }
 /*Кнопка*/
 .butpos{
-    font-size: 28px;
-    position: absolute;
-    top: 60%;
-    left: 18%;
-    transform: translate(-50%, -50%);
+    margin-top: 2%;
+    font-size: 24px;
+    position: relative;
     z-index: 1;
 }
 a.but {
     height: 50px;
+    width: 300px;
     color: #fff;
     text-decoration: none;
     user-select: none;
     background: #131313;
     outline: none;
-    padding: .7em 1em;
     border-radius: 90px;
     transition: .05s linear;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
 }
 a.but:hover { background: #D0943A; }
 /*Раздел с видео*/
@@ -224,23 +220,19 @@ img {vertical-align: middle;}
 }
 /*Текст*/
 .text{
-    font-size: 48px;
+    font-size: 36px;
 }
 .m_text{
+    margin-top: 15%;
+    font-size: 50px;
+    position: relative;
     z-index: 1;
-    position: absolute;
-    font-size: 72px;
-    top: 35%;
-    left: 29.5%;
-    transform: translate(-50%, -50%);
 }
 .s_text{
+    margin-top: 1%;
+    font-size: 24px;
+    position: relative;
     z-index: 1;
-    position: absolute;
-    font-size: 48px;
-    top: 50%;
-    left: 39%;
-    transform: translate(-50%, -50%);
 }
 .text_more{
     position: absolute;
