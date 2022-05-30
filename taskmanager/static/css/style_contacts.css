@@ -58,7 +58,7 @@ a.eff:hover { border-bottom: solid 2px white; }
     left: 19%;
 }
 .retr{
-    font-size: 32px;
+    font-size: 24px;
     width: 500px;
     position: absolute;
     top: 33%;
@@ -66,7 +66,7 @@ a.eff:hover { border-bottom: solid 2px white; }
     border-bottom: solid 2px #D0943A;
 }
 .retr_one{
-    font-size: 32px;
+    font-size: 24px;
     width: 500px;
     position: absolute;
     top: 43%;
@@ -74,7 +74,7 @@ a.eff:hover { border-bottom: solid 2px white; }
     border-bottom: solid 2px #D0943A;
 }
 .retr_two{
-    font-size: 32px;
+    font-size: 24px;
     width: 500px;
     position: absolute;
     top: 53%;
@@ -87,11 +87,11 @@ a.eff:hover { border-bottom: solid 2px white; }
 /*Превью фото*/
 .photo{
     position: absolute;
-    top: 47%;
+    top: 54%;
     left: 60%;
     background-color: white;
     width: 350px;
-    height: 600px;
+    height: 550px;
     transform: translate(-50%, -50%);
 }
 

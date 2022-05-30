@@ -7,10 +7,10 @@ Vedmenko production
         <!--Основна-->
         <div class="content">
             <div class="container">
-                <p class="m_text">ВИДЕОПРОДАКШН <br> "I. VEDMENKO"</p>
+                <p class="m_text">ВИДЕОПРОДАКШН <br> <span class="tern">❮❮</span>I. VEDMENKO<span class="tern">❯❯</span></p>
                 <p class="s_text">CОЗДАНИЕ ЭФФЕКТНЫХ ВИДЕОРОЛИКОВ <br> ДЛЯ ВАШЕГО БИЗНЕСА</p>
                 <div class="butpos">
-                    <a class="but" href="contacts.html">Оставить заявку</a>
+                    <a class="but" href="{% url 'contact' %}">Оставить заявку</a>
                 </div>
             <!--Видео ролик-->
                 <div class="container_v">
@@ -48,23 +48,17 @@ Vedmenko production
             </div>
             <div class="container_pos">
                 <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <img src="{% static 'images/prewie_max.jpg'%}" style="width:100%">
-                    </div>
-                    <div class="mySlides fade">
-                        <img src="{% static 'images/prewie_ilia.jpg'%}" style="width:100%">
-                    </div>
-                    <div class="mySlides fade">
-                        <img src="{% static 'images/prewie_team.jpg'%}" style="width:100%">
-                    </div>
+                <div class="mySlides fade">
+                  <img src="{% static 'images/prewie_max.jpg' %}" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                  <img src="{% static 'images/prewie_ilia.jpg' %}" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                  <img src="{% static 'images/prewie_team.jpg' %}" style="width:100%">
+                </div>
                     <a class="prev" onclick="plusSlides(-1)">❮</a>
                     <a class="next" onclick="plusSlides(1)">❯</a>
-                </div>
-                <br>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
             <!--Слайды-end-->

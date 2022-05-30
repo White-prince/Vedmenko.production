@@ -1,21 +1,13 @@
 /*
 Основной css файл
 */
-@font-face {
-    /*Добавление шрифта Bebasneue Bold*/
-    font-family: "Bebasneue";
-    src: url("fonts/BebasNeue_Bold.otf") format("opentype");
-    url("fonts/BebasNeue_Bold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: "Bebasneue";
+    font-family: 'Montserrat', Thin;
     color: #fff;
     margin: 0;
     background-color: #131313;
@@ -85,8 +77,8 @@ ul{
 .butpos{
     font-size: 28px;
     position: absolute;
-    top: 65%;
-    left: 25%;
+    top: 60%;
+    left: 18%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
@@ -185,47 +177,51 @@ a.but:hover { background: #D0943A; }
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.slideshow-container {
-    max-width: 1080px;
-    position: relative;
-    margin: auto;
-}
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 0.1s;
-    animation-name: fade;
-    animation-duration: 0.1s;
-}
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
 .mySlides {display: none}
 img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.1s;
+  animation-name: fade;
+  animation-duration: 0.1s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 /*Текст*/
 .text{
     font-size: 48px;
@@ -241,9 +237,9 @@ img {vertical-align: middle;}
 .s_text{
     z-index: 1;
     position: absolute;
-    font-size: 52px;
+    font-size: 48px;
     top: 50%;
-    left: 36.5%;
+    left: 39%;
     transform: translate(-50%, -50%);
 }
 .text_more{
