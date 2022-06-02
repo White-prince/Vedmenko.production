@@ -17,28 +17,24 @@ CSS файл портфолио
 /*Блок с рекламой*/
 .advertising-videos {
     text-align: center;
-    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 /*Блок с короткометражками*/
 .shortfilm-videos {
     text-align: center;
-    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 /*Блок с клипами*/
 .music-videos {
     text-align: center;
-    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 .footer_portfolio {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
     position: absolute;
     margin-top: 50px;
 }
