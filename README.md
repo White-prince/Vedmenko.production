@@ -20,6 +20,6 @@ Website for best project of films.
 
 ## Preview :desktop_computer:
 
-![Vedmenko](https://github.com/White-prince/Vedmenko.production/blob/main/images/pre_ved.png?raw=true)
+![Vedmenko]()
 
 Hope this code helps you :crown:
