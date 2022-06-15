@@ -1,10 +1,17 @@
 /*
 Основной css файл
 */
-* {
+*{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('meta-normal'), local('meta-normal'),
+    url('fonts/MontserratMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 body {
     font-family: 'Montserrat', Thin;
@@ -14,7 +21,6 @@ body {
     -webkit-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
-    height: 100vh;
     zoom:100%;
 }
 /*Ссылки*/
@@ -25,22 +31,31 @@ body {
 }
 a.lin:hover {border-bottom: 1px double white;}
 /*Основа*/
-.content{
-    width: 100%;
-    max-width: 1200px;
-    max-height: 100%;
-}
 .container {
-    width: 100%;
-    max-width: 1200px;
+    height: 900px;
+    width: 100hw;
+    padding-left: 360px;
+    padding-right: 360px;
+}
+.container_vid {
+    height: 700px;
+    width: 100hw;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.container_com {
+    height: 900px;
+    width: 100hw;
+    padding-left: 360px;
+    padding-right: 360px;
 }
 /*Видео*/
 .container_v {
-    z-index: 0;
-    height: 100px;
-    width: 100%;
     position: absolute;
-    top: 15%;
+    z-index: 0;
+    width: 100%;
+    background-color: #fff;
+    top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -53,14 +68,15 @@ a.lin:hover {border-bottom: 1px double white;}
 .hat{
     height: 95px;
     width: 100%;
-    max-width: 1200px;
+    padding-left: 360px;
+    padding-right: 360px;
 }
 .logo{
     position: absolute;
     top: 15px;
     width: 200px;
 }
-ul{
+nav{
     position: absolute;
     margin: 0;
     padding: 4px;
@@ -90,140 +106,80 @@ a.but {
     outline: none;
     border-radius: 90px;
     transition: .05s linear;
-    padding: 10px;
+    padding: 15px;
 }
 a.but:hover { background: #D0943A; }
+.but_yet{
+    height: 50px;
+    width: 400px;
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    border: solid 2px #D0943A;
+    border-radius: 90px;
+    transition: .05s linear;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+a.but_yet:hover { background: #D0943A; }
 /*Раздел с видео*/
 .videos{
-    position: absolute;
-    width: 400px;
+    padding-left: 15px;
+    width: 370px;
     height: 250px;
-    background-color: black;
-    transform: translate(-50%, -50%);
+    display: inline;
+    align-items: center;
+    justify-content: center;
 }
-.video_pos_one{
-    position: absolute;
-    top: 150%;
-    left: 25%;
+.videos_pos_one{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 5px;
 }
-.video_pos_two{
-    position: absolute;
-    top: 150%;
-    left: 50%;
+.videos_pos_two{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 50%;
 }
-.video_pos_three{
-    position: absolute;
-    top: 150%;
-    left: 75%;
+.videos_pos_three{
+    position: relative;
+    margin-top: 10%;
+    margin-right: 5px;
 }
 /*Коменты*/
-.com_pos{
-    position: absolute;
-    max-width: 100%;
-    width: 1200px;
-    height: 400px;
-    top: 280%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 .circul{
-    position: absolute;
+    padding: 5px;
     border-radius: 100px;
     width: 60px;
     height: 60px;
-    top: 20%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-}
-.circul1{
-    position: absolute;
-    border-radius: 100px;
-    width: 60px;
-    height: 60px;
-    top: 20%;
-    left: 55%;
-    transform: translate(-50%, -50%);
 }
 .com{
-    position: absolute;
+    margin-top: 20px;
+    margin-right: 5%;
     background-color: white;
     border-radius: 50px;
-    width: 400px;
-    height: 250px;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #131313;
+    padding: 1em;
+    margin-bottom: 25px;
 }
-.com1{
-    position: absolute;
-    background-color: white;
-    border-radius: 50px;
-    width: 400px;
-    height: 250px;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-}
-/* Слайды Команды */
-.container_pos{
-    position: absolute;
-    width: 1080px;
-    height: 600px;
-    top: 210%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.mySlides {display: none}
-img {vertical-align: middle;}
 
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 0.1s;
-  animation-name: fade;
-  animation-duration: 0.1s;
-}
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
 /*Текст*/
 .text{
     font-size: 36px;
+    text-align:center;
 }
 .m_text{
     margin-top: 15%;
+    font-size: 50px;
+    position: relative;
+    z-index: 1;
+}
+.t_text{
     font-size: 50px;
     position: relative;
     z-index: 1;
@@ -234,44 +190,10 @@ img {vertical-align: middle;}
     position: relative;
     z-index: 1;
 }
-.text_more{
-    position: absolute;
-    top: 130%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.text_com{
-    position: absolute;
-    top: 250%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.text_team{
-    position: absolute;
-    top: 170%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.text_in_com{
-    font-size: 24px;
-    color: #131313;
-    padding: 1em;
-}
 /*Подвал*/
-.footer{
-    position: absolute;
-    height: 250px;
+footer{
     color: #fff;
-    bottom: -210%;
+    padding-bottom: 1%;
     width: 100%;
-    margin: 0 auto;
-}
-.cop{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.con{
-    position: absolute;
-    bottom: 1%;
+    text-align: center;
 }
