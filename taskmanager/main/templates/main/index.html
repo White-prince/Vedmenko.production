@@ -4,6 +4,7 @@
 Vedmenko production
 {% endblock %}
 {% block content %}
+    <div class="wrapper">
         <!--Основна-->
         <div class="content">
             <div class="container">
@@ -12,18 +13,18 @@ Vedmenko production
                 <div class="butpos">
                     <a class="but" href="{% url 'contact' %}">Оставить заявку</a>
                 </div>
-            <!--Видео ролик-->
-                <div class="container_v">
+                <div class="contain_v">
                     <video autoplay muted loop id="bts_video" class="fake_video">
                         <source src="{% static 'videos/Web-video.mp4'%}" type="video/mp4">
                     </video>
                 </div>
             </div>
+            <!--Видео ролик-->
             <!--Видео ролик-end-->
             <!--Видео раздел-->
-            <div class="container">
+            <div class="container_vid">
                 <div class="text_more">
-                    <p class="text">Больше видео</p>
+                    <p class="text">Больше видео<span class="tern">:</span></p>
                 </div>
                 <div class="video_pos_one">
                     <div class="videos">
@@ -42,30 +43,10 @@ Vedmenko production
                 </div>
             </div>
             <!--Видео раздел-end-->
-            <!--Слайды-->
-            <div class="text_team">
-                <p class="text">Наша команда</p>
-            </div>
-            <div class="container_pos">
-                <div class="slideshow-container">
-                <div class="mySlides fade">
-                  <img src="{% static 'images/prewie_max.jpg' %}" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                  <img src="{% static 'images/prewie_ilia.jpg' %}" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                  <img src="{% static 'images/prewie_team.jpg' %}" style="width:100%">
-                </div>
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>
-                </div>
-            </div>
-            <!--Слайды-end-->
             <!--Комменты-->
-            <div class="container">
+            <div class="container_com">
                 <div class="text_com">
-                    <p class="text">Комментарии</p>
+                    <p class="text">Комментарии<span class="tern">:</span></p>
                 </div>
                 <div class="com_pos">
                     <img class="circul" src="{% static 'images/i.jpg'%}" alt="Fp">
@@ -82,10 +63,11 @@ Vedmenko production
         </div>
         <!--Основна-end-->
         <!--Подвал-->
-        <div class="footer">
+        <footer>
             <div class="cop">
                 <p class="con">&copy; 2022. All Rights Reserved. Design by <a class="lin" href="https://github.com/White-prince">White-prince.</a></p>
             </div>
-        </div>
+        </footer>
         <!--Подвал-end-->
+    </div>
 {% endblock %}
