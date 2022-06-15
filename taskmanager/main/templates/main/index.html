@@ -4,70 +4,69 @@
 Vedmenko production
 {% endblock %}
 {% block content %}
-    <div class="wrapper">
         <!--Основна-->
-        <div class="content">
             <div class="container">
                 <p class="m_text">ВИДЕОПРОДАКШН</p>
+                <p class="t_text"><span class="tern">❮❮</span>I.VEDMENKO<span class="tern">❯❯</span></p>
                 <p class="s_text">CОЗДАНИЕ ЭФФЕКТНЫХ ВИДЕОРОЛИКОВ <br> ДЛЯ ВАШЕГО БИЗНЕСА</p>
                 <div class="butpos">
                     <a class="but" href="{% url 'contact' %}">Оставить заявку</a>
                 </div>
-                <div class="contain_v">
-                    <video autoplay muted loop id="bts_video" class="fake_video">
-                        <source src="{% static 'videos/Web-video.mp4'%}" type="video/mp4">
-                    </video>
-                </div>
-            </div>
             <!--Видео ролик-->
-            <!--Видео ролик-end-->
+                <video autoplay muted loop id="bts_video" class="container_v">
+                    <source src="{% static 'videos/Web-video.mp4'%}" type="video/mp4">
+                </video>
+            <!--Видео ролик-end-->    
+            </div>
             <!--Видео раздел-->
             <div class="container_vid">
-                <div class="text_more">
-                    <p class="text">Больше видео<span class="tern">:</span></p>
+                <p class="text">Наши работы<span class="tern">:</span></p>
+                <div class="videos">
+                    <video class="videos_pos_one" poster="{% static 'images/videos_prewie.jpg'%}" controls>
+                        <source src="{% static 'videos/Web-video.mp4'%}"  type="video/mp4">
+                    </video>
+                    <video class="videos_pos_one" poster="{% static 'images/videos_prewie.jpg'%}" controls>
+                        <source src="{% static 'videos/Web-video.mp4'%}"  type="video/mp4">
+                    </video>
+                    <video class="videos_pos_three" poster="{% static 'images/videos_prewie.jpg'%}" controls>
+                        <source src="{% static 'videos/Web-video.mp4'%}"  type="video/mp4">
+                    </video>
                 </div>
-                <div class="video_pos_one">
-                    <div class="videos">
-                        <video src="###" poster="{% static 'images/videos_prewie.jpg'%}" controls></video>
-                    </div>
-                </div>
-                <div class="video_pos_two">
-                    <div class="videos">
-                        <video src="###" poster="{% static 'images/videos_prewie.jpg'%}" controls></video>
-                    </div>
-                </div>
-                <div class="video_pos_three">
-                    <div class="videos">
-                        <video src="###" poster="{% static 'images/videos_prewie.jpg'%}" controls></video>
-                    </div>
+                <div class="butpos">
+                    <a class="but_yet" href="{% url 'portfolio' %}">Больше видео</a>
                 </div>
             </div>
             <!--Видео раздел-end-->
             <!--Комменты-->
             <div class="container_com">
-                <div class="text_com">
-                    <p class="text">Комментарии<span class="tern">:</span></p>
+                <p class="text">Комментарии<span class="tern">:</span></p>
+                <img class="circul" src="{% static 'images/i.jpg'%}" alt="Fp">
+                <div class="com">
+                    <p class="text_in_com">Лучшая команда по сьемкам.</p>
                 </div>
-                <div class="com_pos">
-                    <img class="circul" src="{% static 'images/i.jpg'%}" alt="Fp">
-                    <img class="circul1" src="{% static 'images/tdu4GQdsq0E.jpg'%}" alt="Sp">
-                    <div class="com">
-                        <p class="text_in_com">Лучшая команда по сьемкам.</p>
-                    </div>
-                    <div class="com1">
-                        <p class="text_in_com">Работы выполняют быстро и хорошо.</p>
-                    </div>
+                <img class="circul" src="{% static 'images/i.jpg'%}" alt="Fp">
+                <div class="com">
+                    <p class="text_in_com">Лучшая команда по сьемкам.</p>
+                </div>
+                <img class="circul" src="{% static 'images/i.jpg'%}" alt="Fp">
+                <div class="com">
+                    <p class="text_in_com">Лучшая команда по сьемкам.</p>
+                </div>
+                <img class="circul" src="{% static 'images/i.jpg'%}" alt="Fp">
+                <div class="com">
+                    <p class="text_in_com">Лучшая команда по сьемкам.</p>
+                </div>
+                <div class="butpos">
+                    <a class="but_yet" href="{% url 'comment' %}">Больше Комментариев</a>
                 </div>
             </div>
             <!--Комменты-end-->
-        </div>
-        <!--Основна-end-->
-        <!--Подвал-->
-        <footer>
-            <div class="cop">
-                <p class="con">&copy; 2022. All Rights Reserved. Design by <a class="lin" href="https://github.com/White-prince">White-prince.</a></p>
-            </div>
-        </footer>
-        <!--Подвал-end-->
-    </div>
+            <!--Основна-end-->
+            <!--Подвал-->
+            <footer>
+                <div class="cop">
+                    <p>&copy; 2022. All Rights Reserved. Design by <a class="lin" href="https://github.com/White-prince">White-prince.</a></p>
+                </div>
+            </footer>
+            <!--Подвал-end-->
 {% endblock %}

@@ -31,38 +31,33 @@ body {
 }
 a.lin:hover {border-bottom: 1px double white;}
 /*Основа*/
-.wrapper {
-    max-width: 100%;
-    max-height: 100%;
-}
-.content {
-    width: 100%;
-    max-height: 100%;
-}
 .container {
-    height: 1080px;
-    width: 1920px;
+    height: 900px;
+    width: 100hw;
     padding-left: 360px;
     padding-right: 360px;
 }
 .container_vid {
     height: 700px;
-    width: 1920px;
-    padding-left: 360px;
-    padding-right: 360px;
+    width: 100hw;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 .container_com {
-    height: 700px;
-    width: 1920px;
+    height: 900px;
+    width: 100hw;
     padding-left: 360px;
     padding-right: 360px;
 }
 /*Видео*/
 .container_v {
+    position: absolute;
     z-index: 0;
-    height: 100px;
     width: 100%;
     background-color: #fff;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .container_v > #bts_video{
     width: 100%;
@@ -111,64 +106,80 @@ a.but {
     outline: none;
     border-radius: 90px;
     transition: .05s linear;
-    padding: 10px;
+    padding: 15px;
 }
 a.but:hover { background: #D0943A; }
+.but_yet{
+    height: 50px;
+    width: 400px;
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    border: solid 2px #D0943A;
+    border-radius: 90px;
+    transition: .05s linear;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+a.but_yet:hover { background: #D0943A; }
 /*Раздел с видео*/
 .videos{
-    position: absolute;
-    width: 400px;
+    padding-left: 15px;
+    width: 370px;
     height: 250px;
-    background-color: black;
+    display: inline;
+    align-items: center;
+    justify-content: center;
 }
-.video_pos_one{
-    position: absolute;
+.videos_pos_one{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 5px;
 }
-.video_pos_two{
-    position: absolute;
+.videos_pos_two{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 50%;
 }
-.video_pos_three{
-    position: absolute;
+.videos_pos_three{
+    position: relative;
+    margin-top: 10%;
+    margin-right: 5px;
 }
 /*Коменты*/
-.com_pos{
-    position: absolute;
-    max-width: 100%;
-    width: 1200px;
-    height: 400px;
-}
 .circul{
-    position: absolute;
-    border-radius: 100px;
-    width: 60px;
-    height: 60px;
-}
-.circul1{
-    position: absolute;
+    padding: 5px;
     border-radius: 100px;
     width: 60px;
     height: 60px;
 }
 .com{
-    position: absolute;
+    margin-top: 20px;
+    margin-right: 5%;
     background-color: white;
     border-radius: 50px;
-    width: 400px;
-    height: 250px;
+    font-size: 24px;
+    color: #131313;
+    padding: 1em;
+    margin-bottom: 25px;
 }
-.com1{
-    position: absolute;
-    background-color: white;
-    border-radius: 50px;
-    width: 400px;
-    height: 250px;
-}
+
 /*Текст*/
 .text{
     font-size: 36px;
+    text-align:center;
 }
 .m_text{
     margin-top: 15%;
+    font-size: 50px;
+    position: relative;
+    z-index: 1;
+}
+.t_text{
     font-size: 50px;
     position: relative;
     z-index: 1;
@@ -179,31 +190,10 @@ a.but:hover { background: #D0943A; }
     position: relative;
     z-index: 1;
 }
-.text_more{
-    position: absolute;
-}
-.text_com{
-    position: absolute;
-}
-.text_in_com{
-    font-size: 24px;
-    color: #131313;
-    padding: 1em;
-}
 /*Подвал*/
 footer{
-    position: absolute;
     color: #fff;
-    padding-bottom: 0;
+    padding-bottom: 1%;
     width: 100%;
-    margin: 0 auto;
-}
-.cop{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.con{
-    position: absolute;
-    bottom: 1%;
+    text-align: center;
 }
