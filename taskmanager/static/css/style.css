@@ -321,6 +321,28 @@ a.eff:hover { border-bottom: solid 2px white; }
     width: 150px;
     color: black;
 }
+/*
+О нас CSS
+*/
+.container_a {
+    margin-top: 50px;
+    height: 600px;
+    width: 100hw;
+    padding-left: 360px;
+    padding-right: 360px;
+}
+.leftimg {
+    float:left;
+    margin: 0 7px 7px 0;
+    width: 250px;
+    height: 350px;
+   }
+.rightimg  {
+    float: right;
+    margin: 0 0 7px 7px;
+    width: 250px;
+    height: 350px;
+   }
 /*Подвал*/
 footer{
     color: #fff;
