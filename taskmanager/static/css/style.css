@@ -9,12 +9,19 @@
 @font-face {
     font-family: 'Montserrat';
     src: local('meta-normal'), local('meta-normal'),
+    url('fonts/MontserratThin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat_Bolt';
+    src: local('meta-normal'), local('meta-normal'),
     url('fonts/MontserratMedium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 body {
-    font-family: 'Montserrat', Thin;
+    font-family: Montserrat_Bolt, Thin;
     color: #fff;
     background-color: #131313;
     -moz-background-size: 100%;
@@ -129,26 +136,9 @@ a.but_yet:hover { background: #D0943A; }
 /*Раздел с видео*/
 .videos{
     padding-left: 15px;
-    width: 370px;
-    height: 250px;
-    display: inline;
+    display: center;
     align-items: center;
     justify-content: center;
-}
-.videos_pos_one{
-    position: relative;
-    margin-top: 10%;
-    margin-left: 5px;
-}
-.videos_pos_two{
-    position: relative;
-    margin-top: 10%;
-    margin-left: 50%;
-}
-.videos_pos_three{
-    position: relative;
-    margin-top: 10%;
-    margin-right: 5px;
 }
 /*Коменты*/
 .circul{
@@ -193,36 +183,16 @@ a.but_yet:hover { background: #D0943A; }
 /*
 CSS портфолио
 */
-.content-portfolio {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-/*Блок под ролик*/
 .videos-slot {
     display: inline-block;
-    width: 368px;
-    height: 207px;
     background-color: black;
     margin: 15px;
 }
-/*Блок с рекламой*/
-.advertising-videos {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-/*Блок с короткометражками*/
-.shortfilm-videos {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-/*Блок с клипами*/
-.music-videos {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.container_vid_port {
+    height: 600px;
+    width: 100hw;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 /*
 Контакты css файл
@@ -350,12 +320,24 @@ a.eff:hover { border-bottom: solid 2px white; }
     margin-right: 30px;
 }
 .follow{
-    padding-bottom: 1%;
+    margin-top: 200px;
+}
+.follow{
+    float: right;
+    margin-top: 200px;
 }
 .text_a{
     font-size: 36px;
 }
 .text_a_t{
+    font-size: 30px;
+}
+.text_a_r{
+    float: right;
+    font-size: 36px;
+}
+.text_a_rt{
+    float: right;
     font-size: 30px;
 }
 /*Подвал*/
