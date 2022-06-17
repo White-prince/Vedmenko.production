@@ -190,6 +190,174 @@ a.but_yet:hover { background: #D0943A; }
     position: relative;
     z-index: 1;
 }
+/*
+CSS портфолио
+*/
+.content-portfolio {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*Блок под ролик*/
+.videos-slot {
+    display: inline-block;
+    width: 368px;
+    height: 207px;
+    background-color: black;
+    margin: 15px;
+}
+/*Блок с рекламой*/
+.advertising-videos {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*Блок с короткометражками*/
+.shortfilm-videos {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*Блок с клипами*/
+.music-videos {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*
+Контакты css файл
+*/
+/*Кнопка*/
+a.button{
+    margin-left: 280px;
+    margin-bottom: 60px;
+    font-size: 30px;
+    width: 220px;
+    height: 70px;
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    padding: .7em 1em;
+    border-radius: 90px;
+    border: solid 2px #D0943A;
+    transition: .05s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.button:hover{background: #D0943A;}
+.eff{
+    color: #fff;
+}
+a.eff:hover { border-bottom: solid 2px white; }
+/*Соц-сети*/
+.container_soc {
+    height: 850px;
+    width: 100hw;
+    padding-left: 360px;
+    padding-right: 360px;
+}
+.vibe{
+    width: 65px;
+    height: 65px;
+    margin-right: 140px;
+}
+/*Текст*/
+.fore{
+    font-size: 40px;
+    top: 25%;
+    left: 19%;
+    padding-bottom: 20px;
+}
+.fore_n{
+    font-size: 35px;
+    top: 25%;
+    left: 19%;
+    padding-bottom: 50px;
+}
+.retr{
+    font-size: 28px;
+    margin-bottom: 100px;
+    margin-right: 700px;
+    border-bottom: solid 2px #D0943A;
+    padding-bottom: 10px;
+}
+.tern{
+    color: #D0943A;
+}
+/*Превью фото*/
+.photo{
+    position: absolute;
+    top: 54%;
+    left: 60%;
+    background-color: white;
+    width: 350px;
+    height: 550px;
+    transform: translate(-50%, -50%);
+}
+/*
+Отзовы css файл
+*/
+.content-comments {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-comments {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.comment {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    background-color: silver;
+    margin: 15px;
+}
+.comment_text {
+    height: 100px;
+    width: 150px;
+    color: black;
+}
+/*
+О нас CSS
+*/
+.container_a {
+    margin-top: 50px;
+    height: 370px;
+    width: 100hw;
+    padding-left: 360px;
+    padding-right: 360px;
+}
+.leftimg {
+    float:left;
+    margin: 0 7px 7px 0;
+    width: 250px;
+    height: 350px;
+   }
+.rightimg  {
+    float: right;
+    margin: 0 0 7px 7px;
+    width: 250px;
+    height: 350px;
+   }
+.vibe_a{
+    float: bottom;
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+}
+.follow{
+    padding-bottom: 1%;
+}
+.text_a{
+    font-size: 36px;
+}
+.text_a_t{
+    font-size: 30px;
+}
 /*Подвал*/
 footer{
     color: #fff;
