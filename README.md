@@ -26,7 +26,7 @@ Website for best project of films.
 
 If you are cloning a project, run it first, otherwise you can download the source on the release page and skip this step.
 
-    git clone https://github.com/White-prince/Moderbot.git
+    git clone https://github.com/White-prince/Vedmenko.production.git
 
 You will need to install:
 
