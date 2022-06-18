@@ -68,7 +68,7 @@ a.lin:hover {border-bottom: 1px double white;}
     z-index: 0;
     width: 100%;
     background-color: #fff;
-    top: 66%;
+    top: 64%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
