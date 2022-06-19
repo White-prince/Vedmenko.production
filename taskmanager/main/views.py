@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect
-from settings import RECIPIENTS_EMAIL, DEFAULT_FROM_EMAIL
+from taskmanager.settings import RECIPIENTS_EMAIL, DEFAULT_FROM_EMAIL
 
 
 
@@ -20,7 +20,7 @@ def comment(request):
 
 
 def contact(request):
-    # если метод GET, вернем форму
+    return render(request, 'main/contacts.html')
     if request.method == 'GET':
         form = ContactForm()
     elif request.method == 'POST':
@@ -38,7 +38,7 @@ def contact(request):
             return redirect('success')
     else:
         return HttpResponse('Неверный запрос.')
-    return render(request, "contact.html", {'form': form})
+    return render(request, "email.html", {'form': form})
 
 
 def portfolio(request):
