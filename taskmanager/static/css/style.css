@@ -196,7 +196,7 @@ CSS портфолио
 Контакты css файл
 */
 /*Кнопка*/
-a.button{
+button{
     margin-left: 280px;
     margin-bottom: 60px;
     font-size: 30px;
@@ -213,11 +213,7 @@ a.button{
     justify-content: center;
     align-items: center;
 }
-a.button:hover{background: #D0943A;}
-.eff{
-    color: #fff;
-}
-a.eff:hover { border-bottom: solid 2px white; }
+button:hover{background: #D0943A;}
 /*Соц-сети*/
 .container_soc {
     height: 850px;

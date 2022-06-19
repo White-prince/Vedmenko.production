@@ -4,16 +4,29 @@
 Vedmenko production
 {% endblock %}
 {% block content %}
-  <h1 class="text-center">Оставьте заявку</h1>
-  <div class="container text-center">
-    <div id="form_container">
-      <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <div class="form-actions form-group ">
-          <button type="submit" class="form-control btn btn-success">Отправить</button>
-        </div>
-      </form>
+  <div class="container_soc">
+    <form method="post">
+    <p class="fore">КАК С НАМИ СВЯЗАТЬСЯ<span class="tern">?</span> ПРОСТО<span class="tern">!</span> </p>
+    <p class="fore_n">ЗАДАЙТЕ СВОЙ ВОПРОС <span class="tern">:</span></p>
+    <p class="retr">ВАШЕ ИМЯ</p>
+    <p class="retr">E-MAIL</p>
+    <p class="retr">СООБЩЕНИЕ</p>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Отправить</button>
+    </form>
+<div>
+    <div>
+        <a href="###"><img class="vibe" src="{% static 'images/INV.png' %}" alt="preview"></a>
+        <a href="###"><img class="vibe" src="{% static 'images/TGV.png' %}" alt="preview"></a>
+        <a href="###"><img class="vibe" src="{% static 'images/VKV.png' %}" alt="preview"></a>
     </div>
-  </div>
+</div>
+    <img class="photo" src="{% static 'images/unnamed.jpg' %}" alt="preview">
+</div>
+<footer>
+    <div class="cop">
+        <p>&copy; 2022. All Rights Reserved. Design by <a class="lin" href="https://github.com/White-prince">White-prince.</a></p>
+    </div>
+</footer>
 {% endblock %}
