@@ -8,9 +8,9 @@ Vedmenko production
     <form method="post">
     <p class="fore">КАК С НАМИ СВЯЗАТЬСЯ<span class="tern">?</span> ПРОСТО<span class="tern">!</span> </p>
     <p class="fore_n">ЗАДАЙТЕ СВОЙ ВОПРОС <span class="tern">:</span></p>
-    <p class="retr">ВАШЕ ИМЯ</p>
-    <p class="retr">E-MAIL</p>
-    <p class="retr">СООБЩЕНИЕ</p>
+    <label>ВАШЕ ИМЯ <input type="text"></label>
+    <label>E-MAIL<input type="text"></label>
+    <label>СООБЩЕНИЕ<input type="text"></label>
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Отправить</button>
