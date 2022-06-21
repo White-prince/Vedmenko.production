@@ -22,26 +22,22 @@ def comment(request):
     #return render(request, 'main/contacts.html')
 
 def get_contact(request):
-    # if this is a POST request we need to process the form data
-    if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
+    if request.method == 'GET':
+        form = ContactForm()
+    elif request.method == 'POST':
         form = ContactForm(request.POST)
-        # check whether it's valid:
         if form.is_valid():
             name = form.cleaned_data['name']
             sender = form.cleaned_data['sender']
             message = form.cleaned_data['message']
-
-            recipients = ['alekceev101@gmail.com']
-
-            send_mail(name, message, sender, recipients)
-
+            try:
+                send_mail(name, message,
+                          sender, RECIPIENTS_EMAIL)
+            except BadHeaderError:
+                return HttpResponse('Ошибка в теме письма.')
             return HttpResponseRedirect('homepage')
-
-    # if a GET (or any other method) we'll create a blank form
     else:
-        form = ContactForm()
-
+        return HttpResponse('Неверный запрос.')
     return render(request, 'main/contacts.html', {'form': form})
 
 

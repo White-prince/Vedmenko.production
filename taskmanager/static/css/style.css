@@ -219,6 +219,11 @@ CSS портфолио
 label{
     font-size: 34px;
 }
+input{
+    outline: none;
+    border: none;
+    border: solid 0px #f2f2f2;
+    }
 /*Соц-сети*/
 .container_soc {
     height: 1050px;
