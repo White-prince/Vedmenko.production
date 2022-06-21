@@ -11,11 +11,12 @@ Vedmenko production
         {% csrf_token %}
         <p><label for="id_subject">Ваше имя<span class="tern">:</span></label>
             <input class="inp" id="id_subject" type="text" name="name" maxlength="100" required /></p>
-        <p><label  for="id_message">Сообщение<span class="tern">:</span></label>
-            <input class="inp" name="message" id="id_message" maxlength="100" required /></p>
         <p><label for="id_sender">Почтовый ящик<span class="tern">:</span></label>
             <input class="inp" type="email" name="sender" id="id_sender" required /></p>
+        <p><label  for="id_message">Сообщение<span class="tern">:</span></label>
+            <input class="inp" name="message" id="id_message" maxlength="100" required /></p>
         <input class="button" type="submit" value="Отправить" />
+        
     </form>
     <div>
         <div>
