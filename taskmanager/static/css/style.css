@@ -196,7 +196,7 @@ CSS портфолио
 Контакты css файл
 */
 /*Кнопка*/
-button{
+.button{
     margin-left: 280px;
     margin-bottom: 60px;
     font-size: 30px;
@@ -205,15 +205,17 @@ button{
     text-decoration: none;
     user-select: none;
     outline: none;
-    padding: .7em 1em;
+    padding: .5em 1em;
     border-radius: 90px;
     border: solid 2px #D0943A;
     transition: .05s linear;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #131313;
+    color: #fff;
 }
-button:hover{background: #D0943A;}
+.button:hover{background: #D0943A;}
 /*Соц-сети*/
 .container_soc {
     height: 850px;
@@ -239,12 +241,14 @@ button:hover{background: #D0943A;}
     left: 19%;
     padding-bottom: 50px;
 }
-input{
-    font-size: 28px;
+.inp{
+    font-size: 34px;
     margin-bottom: 100px;
     margin-right: 700px;
     border-bottom: solid 2px #D0943A;
     padding-bottom: 10px;
+    background-color: #131313;
+    color: #fff;
 }
 .tern{
     color: #D0943A;

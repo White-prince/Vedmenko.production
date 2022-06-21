@@ -6,14 +6,19 @@ Vedmenko production
 {% block content %}
   <div class="container_soc">
     <form method="post">
-    <p class="fore">КАК С НАМИ СВЯЗАТЬСЯ<span class="tern">?</span> ПРОСТО<span class="tern">!</span> </p>
-    <p class="fore_n">ЗАДАЙТЕ СВОЙ ВОПРОС <span class="tern">:</span></p>
-    <label>ВАШЕ ИМЯ <input type="text"></label>
-    <label>E-MAIL<input type="text"></label>
-    <label>СООБЩЕНИЕ<input type="text"></label>
-    {% csrf_token %}
+    <div class="fore">КАК С НАМИ СВЯЗАТЬСЯ<span class="tern">?</span> ПРОСТО<span class="tern">!</span> </div>
+    <div class="fore_n">ЗАДАЙТЕ СВОЙ ВОПРОС <span class="tern">:</span></div>
+    <p><label for="id_subject">Name:</label>
+        <input class="inp" id="id_subject" type="text" name="name" maxlength="100" required /></p>
+    <p><label for="id_sender">Email:</label>
+        <input class="inp" type="email" name="from_email" id="id_sender" required /></p>
+    <p><label for="id_message">Message:</label>
+        <textarea class="inp" name="message" id="id_message" required></textarea></p>
+    <p><label for="id_cc_myself">Cc myself:</label>
+        <input type="checkbox" name="cc_myself" id="id_cc_myself" /></p>
+    {% csrf_token %}    
     {{ form.as_p }}
-    <button type="submit">Отправить</button>
+    <input class="button" type="submit" value="Отправить">
     </form>
 <div>
     <div>

@@ -21,24 +21,18 @@ def comment(request):
 
 def contact(request):
     return render(request, 'main/contacts.html')
-    if request.method == 'GET':
-        form = ContactForm()
-    elif request.method == 'POST':
-        # если метод POST, проверим форму и отправим письмо
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            subject = form.cleaned_data['subject']
-            from_email = form.cleaned_data['from_email']
-            message = form.cleaned_data['message']
-            try:
-                send_mail(f'{subject} от {from_email}', message,
-                          DEFAULT_FROM_EMAIL, RECIPIENTS_EMAIL)
-            except BadHeaderError:
-                return HttpResponse('Ошибка в теме письма.')
-            return redirect('success')
-    else:
-        return HttpResponse('Неверный запрос.')
-    return render(request, "email.html", {'form': form})
+    if form.is_valid():
+        name = form.cleaned_data['name']
+        message = form.cleaned_data['message']
+        from_email = form.cleaned_data['from_email']
+        cc_myself = form.cleaned_data['cc_myself']
+
+        recipients = ['alekceev101@gmail.com']
+        if cc_myself:
+            recipients.append(name)
+
+        send_mail(name, message, from_email, recipients)
+        return HttpResponseRedirect('/thanks/')
 
 
 def portfolio(request):
