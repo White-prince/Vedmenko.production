@@ -128,5 +128,4 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 RECIPIENTS_EMAIL = ['alekceev101@gmail.com']   # замените на свою почту
-DEFAULT_FROM_EMAIL = 'alekceev101@gmail.com'  # замените на свою почту
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
