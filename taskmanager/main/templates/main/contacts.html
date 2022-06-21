@@ -5,12 +5,18 @@ Vedmenko production
 {% endblock %}
 {% block content %}
     <div class="container_soc">
-        <p class="fore">КАК С НАМИ СВЯЗАТЬСЯ<span class="tern">?</span> ПРОСТО<span class="tern">!</span> </p>
-        <p class="fore_n">ЗАДАЙТЕ СВОЙ ВОПРОС <span class="tern">:</span></p>
-        <p class="retr">ВАШЕ ИМЯ</p>
-        <p class="retr">E-MAIL</p>
-        <p class="retr">СООБЩЕНИЕ</p>
-        <a class="button" href="###"><p class="eff">Отправить</p></a>
+        <div class="fore">КАК С НАМИ СВЯЗАТЬСЯ<span class="tern">?</span> ПРОСТО<span class="tern">!</span> </div>
+        <div class="fore_n">ЗАДАЙТЕ СВОЙ ВОПРОС <span class="tern">:</span></div>
+    <form method="post">
+        {% csrf_token %}
+        <p><label for="id_subject">Ваше имя<span class="tern">:</span></label>
+            <input class="inp" id="id_subject" type="text" name="name" maxlength="100" required /></p>
+        <p><label  for="id_message">Сообщение<span class="tern">:</span></label>
+            <input class="inp" name="message" id="id_message" maxlength="100" required /></p>
+        <p><label for="id_sender">Почтовый ящик<span class="tern">:</span></label>
+            <input class="inp" type="email" name="sender" id="id_sender" required /></p>
+        <input class="button" type="submit" value="Отправить" />
+    </form>
     <div>
         <div>
             <a href="###"><img class="vibe" src="{% static 'images/INV.png' %}" alt="preview"></a>
