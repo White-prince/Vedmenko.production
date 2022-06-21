@@ -216,9 +216,12 @@ CSS портфолио
     color: #fff;
 }
 .button:hover{background: #D0943A;}
+label{
+    font-size: 34px;
+}
 /*Соц-сети*/
 .container_soc {
-    height: 850px;
+    height: 1050px;
     width: 100hw;
     padding-left: 360px;
     padding-right: 360px;
