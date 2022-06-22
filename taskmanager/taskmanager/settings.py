@@ -127,6 +127,7 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+<<<<<<< HEAD
 RECIPIENTS_EMAIL = ['alekceev101@gmail.com']
 
 DEFAULT_FROM_EMAIL = 'tiltedfear@gmail.com'
@@ -137,3 +138,12 @@ EMAIL_HOST_USER = 'postmaster@sandboxff81d06a1e11486bb7fe5cde20c889bb.mailgun.or
 EMAIL_HOST_PASSWORD = 'ab59836b8cf9c9a08fea9fc2866b8323-4f207195-55d7942c'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = False
+=======
+RECIPIENTS_EMAIL = ['']
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.mailgun.org'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+>>>>>>> 607a53fc46a258e57a6b6b193e198b132d87589c
