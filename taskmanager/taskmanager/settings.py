@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-5($k0ef$kky73q052!9_3vr=b##e&l(&&ky8m3sj&kdick#tdj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['vedmenkoprod.ru']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -116,7 +116,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_ROOT = '/home/c/cf77097/vp/public_html/static/'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
@@ -128,10 +127,13 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-RECIPIENTS_EMAIL = ['tiltedfear@gmail.com']
+RECIPIENTS_EMAIL = ['alekceev101@gmail.com']
+
+DEFAULT_FROM_EMAIL = 'tiltedfear@gmail.com'
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.mailgun.org'
-EMAIL_HOST_USER = 'postmaster@sandbox6bc19b0b18224f8881903f85746a6178.mailgun.org'
-EMAIL_HOST_PASSWORD = 'faf81abd80c4e24de622ca6617ef3787-4f207195-6473b919'
+EMAIL_HOST_USER = 'postmaster@sandboxff81d06a1e11486bb7fe5cde20c889bb.mailgun.org'
+EMAIL_HOST_PASSWORD = 'ab59836b8cf9c9a08fea9fc2866b8323-4f207195-55d7942c'
 EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_USE_TLS = False

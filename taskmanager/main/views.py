@@ -1,9 +1,8 @@
-from django.shortcuts import render
 from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect
-from taskmanager.settings import RECIPIENTS_EMAIL
+from taskmanager.settings import RECIPIENTS_EMAIL, DEFAULT_FROM_EMAIL
 
 
 
@@ -25,11 +24,11 @@ def get_contact(request):
     elif request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            sabject = form.cleaned_data['name']
+            subject = form.cleaned_data['name']
             sender = form.cleaned_data['sender']
             message = form.cleaned_data['message']
             try:
-                send_mail(sabject, message, sender, RECIPIENTS_EMAIL)
+                send_mail(subject, f'{message} as {sender}', DEFAULT_FROM_EMAIL, RECIPIENTS_EMAIL)
             except BadHeaderError:
                 return HttpResponse('Ошибка в теме письма.')
             return HttpResponseRedirect('contact')
