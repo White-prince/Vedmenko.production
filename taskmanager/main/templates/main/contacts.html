@@ -9,12 +9,9 @@ Vedmenko production
         <div class="fore_n">ЗАДАЙТЕ СВОЙ ВОПРОС <span class="tern">:</span></div>
     <form method="post">
         {% csrf_token %}
-        <p><label for="id_subject">Ваше имя<span class="tern">:</span></label>
-            <input class="inp" id="id_subject" type="text" name="name" maxlength="100" required /></p>
-        <p><label for="id_sender">Почтовый ящик<span class="tern">:</span></label>
-            <input class="inp" type="email" name="sender" id="id_sender" required /></p>
-        <p><label  for="id_message">Сообщение<span class="tern">:</span></label>
-            <input class="inp" name="message" id="id_message" maxlength="100" required /></p>
+        <p><input class="inp" id="id_subject" type="text" name="name" placeholder="Ваше имя" maxlength="100" required /></p>
+        <p><input class="inp" type="email" name="sender" placeholder="E-mail" id="id_sender" required /></p>
+        <p><input class="inp" name="message" id="id_message" placeholder="Сообщение" maxlength="100" required /></p>
         <input class="button" type="submit" value="Отправить" />
         
     </form>

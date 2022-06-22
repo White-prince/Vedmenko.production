@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect
-from taskmanager.settings import RECIPIENTS_EMAIL, DEFAULT_FROM_EMAIL
+from taskmanager.settings import RECIPIENTS_EMAIL
 
 
 
@@ -18,8 +18,6 @@ def about(request):
 def comment(request):
     return render(request, 'main/comments.html')
 
-#def contact(request):
-    #return render(request, 'main/contacts.html')
 
 def get_contact(request):
     if request.method == 'GET':
@@ -27,15 +25,14 @@ def get_contact(request):
     elif request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            name = form.cleaned_data['name']
+            sabject = form.cleaned_data['name']
             sender = form.cleaned_data['sender']
             message = form.cleaned_data['message']
             try:
-                send_mail(name, message,
-                          sender, RECIPIENTS_EMAIL)
+                send_mail(sabject, message, sender, RECIPIENTS_EMAIL)
             except BadHeaderError:
                 return HttpResponse('Ошибка в теме письма.')
-            return HttpResponseRedirect('homepage')
+            return HttpResponseRedirect('contact')
     else:
         return HttpResponse('Неверный запрос.')
     return render(request, 'main/contacts.html', {'form': form})
