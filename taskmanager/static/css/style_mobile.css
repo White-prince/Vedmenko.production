@@ -1,3 +1,298 @@
 /*
 Мобильная версия css файл
 */
+@media screen and (max-width: 2560px) {
+    /* 4K */
+    
+}
+@media screen and (max-width: 1200px) {
+    /* Ноутбук */
+    /* Шапка */
+    .hat{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    nav{
+        right: 1%;
+    }
+    .container {
+        height: 650px;
+        width: 100hw;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .container_vid {
+        height: 500px;
+        width: 100hw;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .container_com {
+        height: 950px;
+        width: 100hw;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .videos{
+        width: 320px; 
+        height: 200px;
+    }
+    /* О нас */
+    .container_a {
+        margin-top: 50px;
+        height: 370px;
+        width: 100hw;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 900px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .photo{
+        top: 54%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+    }
+    /* Отзовы */
+    .container_comment {
+        height: 950px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        height: 550px;
+        width: 100hw;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    }
+@media screen and (max-width: 991px) {
+    /* планшетов */
+    .hat{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    nav{
+        right: 1%;
+    }
+    .container {
+        height: 450px;
+        width: 100hw;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .container_vid {
+        margin-top: 10px;
+        height: 500px;
+        width: 100hw;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .container_com {
+        height: 950px;
+        width: 100hw;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .videos{
+        width: 290px; 
+        height: 200px;
+    }
+    /* О нас */
+    .container_a {
+        margin-top: 50px;
+        height: 370px;
+        width: 100hw;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 900px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .photo{
+        top: 54%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+    }
+    /* Отзовы */
+    .container_comment {
+        height: 950px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        height: 800px;
+        width: 100hw;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .text_a_rt{
+        float: right;
+        font-size: 24px;
+    }
+    .text_a_t{
+        font-size: 24px;
+    }
+}
+    
+@media screen and (max-width: 767px) {
+    /* средний планшет */
+    .hat{
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    nav{
+        right: 0%;
+    }
+    .container {
+        height: 350px;
+        width: 100hw;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 700px;
+        width: 100hw;
+    }
+    .container_com {
+        height: 950px;
+        width: 100hw;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .videos{
+        width: 290px; 
+        height: 200px;
+    }
+    /* О нас */
+    .container_a {
+        margin-top: 50px;
+        height: 370px;
+        width: 100hw;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 900px;
+        width: 892px;
+    }
+    .photo{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: white;
+        width: 0px;
+        height: 0px;
+        transform: translate(-50%, -50%);
+    }
+    /* Отзовы */
+    .container_comment {
+        height: 950px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        height: 1450px;
+        width: 100hw;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .text_a_rt{
+        float: right;
+        font-size: 16px;
+    }
+    .text_a_t{
+        font-size: 16px;
+    }
+    .vibe{
+        width: 65px;
+        height: 65px;
+        margin-right: 70px;
+    }
+}
+    
+@media screen and (max-width: 479px) {
+    /* телефонов */
+    .hat{
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    nav{
+        right: 0%;
+    }
+    .container {
+        height: 350px;
+        width: 100hw;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 700px;
+        width: 100hw;
+    }
+    .container_com {
+        height: 950px;
+        width: 100hw;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .videos{
+        width: 290px; 
+        height: 200px;
+    }
+    /* О нас */
+    .container_a {
+        margin-top: 50px;
+        height: 370px;
+        width: 100hw;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 900px;
+        width: 100hw;
+    }
+    .photo{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: white;
+        width: 0px;
+        height: 0px;
+        transform: translate(-50%, -50%);
+    }
+    /* Отзовы */
+    .container_comment {
+        height: 950px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        height: 1450px;
+        width: 100hw;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .text_a_rt{
+        float: right;
+        font-size: 16px;
+    }
+    .text_a_t{
+        font-size: 16px;
+    }
+    .vibe{
+        width: 65px;
+        height: 65px;
+        margin-right: 70px;
+    }
+}
