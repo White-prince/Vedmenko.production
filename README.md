@@ -36,6 +36,21 @@ If the library doesn't install, try updating pip.
 
 ## Usege :information_source:
 
+I use mailgun to send emails, in order to run this feature, register on mailgun or sandgrid. Replace these fields with your login, password:
+
+    DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+    RECIPIENTS_EMAIL = ['e-mail'] - recipient
+
+    DEFAULT_FROM_EMAIL = 'e-mail' - sender
+
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST = 'smtp.mailgun.org'
+    EMAIL_HOST_USER = 'login'
+    EMAIL_HOST_PASSWORD = 'password'
+    EMAIL_PORT = 587 - your port
+    EMAIL_USE_TLS = False
+
 To start the server:
     
     python manage.py runserver
