@@ -116,6 +116,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
+STATIC_ROOT = '/home/c/cf77097/vp/public_html/static/'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
@@ -132,7 +133,7 @@ DEFAULT_FROM_EMAIL = 'tiltedfear@gmail.com'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.mailgun.org'
-EMAIL_HOST_USER = ' postmaster@sandboxff81d06a1e11486bb7fe5cde20c889bb.mailgun.org'
-EMAIL_HOST_PASSWORD = 'ab59836b8cf9c9a08fea9fc2866b8323-4f207195-55d7942c'
+EMAIL_HOST_USER = 'postmaster@sandboxff81d06a1e11486bb7fe5cde20c889bb.mailgun.org'
+EMAIL_HOST_PASSWORD = 'ec0d8e5913938bdb544b18b8bd8683cf-4f207195-40debe5d'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = False
