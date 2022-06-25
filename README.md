@@ -48,7 +48,7 @@ I use mailgun to send emails, in order to run this feature, register on mailgun 
     EMAIL_HOST = 'smtp.mailgun.org'
     EMAIL_HOST_USER = 'login'
     EMAIL_HOST_PASSWORD = 'password'
-    EMAIL_PORT = 587 - your port
+    EMAIL_PORT = ### - your port
     EMAIL_USE_TLS = False
 
 To start the server:
