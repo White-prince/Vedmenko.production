@@ -49,7 +49,7 @@ I use mailgun to send emails, in order to run this feature, register on mailgun 
     EMAIL_HOST_USER = 'login'
     EMAIL_HOST_PASSWORD = 'password'
     EMAIL_PORT = ### - your port
-    EMAIL_USE_TLS = False
+    EMAIL_USE_TLS = True
 
 To start the server:
     
