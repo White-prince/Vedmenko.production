@@ -15,8 +15,8 @@ def about(request):
     return render(request, 'main/about_us.html')
 
 
-def comment(request):
-    return render(request, 'main/comments.html')
+def price(request):
+    return render(request, 'main/price.html')
 
 
 def get_contact(request):
