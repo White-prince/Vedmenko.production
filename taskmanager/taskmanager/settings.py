@@ -20,10 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-5($k0ef$kky73q052!9_3vr=b##e&l(&&ky8m3sj&kdick#tdj'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -116,7 +116,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_ROOT = '/home/c/cf77097/vp/public_html/static/'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
@@ -133,12 +132,12 @@ RECIPIENTS_EMAIL = ['']
 #sender
 DEFAULT_FROM_EMAIL = ''
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = ''
 #mailgun 
-EMAIL_HOST = 'smtp.mailgun.org'
+EMAIL_HOST = ''
 #login, password    
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 #port
-EMAIL_PORT = 587
-EMAIL_USE_TLS = False
+EMAIL_PORT = 
+EMAIL_USE_TLS =True
