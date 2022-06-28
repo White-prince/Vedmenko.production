@@ -6,14 +6,45 @@ Vedmenko production
 {% block content %}
     <div class="container_comment">
         <div class="pag">
-            <p style="text-align: center; font-size: 40px;">Сценарий</p>
+            <p style="text-align: center; font-size: 35px;">Рекламный ролик</p>
+            <div style="width: 200px; height: 2px; background-color: #000;"></div>
             <p></p>
-            <p style="margin-bottom: 15px; text-align: center;font-size: 20px;">5 000p</p>
+            <div class="butpos_price">   
+                <p style="margin-bottom:15px; text-align: center;font-size: 24px;">5 000 ₽</p>
+                <a class="but_yet_price" href="{% url 'contact' %}">Заказать</a>
+            </div>
         </div>
         <div class="pag">
-            <p style="text-align: center;">Сценарий</p>
-            <p></p>
-            <p style="display: flex; align-items: bottom; justify-content: bottom;">5 000p</p>
+            <p style="text-align: center; font-size: 35px;">Съемочная <br> группа</p>
+            <div style="width: 200px; height: 2px; background-color: #000;"></div>
+            <div class="butpos_price">
+                <p style="width: 110px; margin-bottom:15px; text-align: center;font-size: 24px;">10 000 ₽</p>    
+                <a class="but_yet_price" href="{% url 'contact' %}">Заказать</a>
+            </div>
+        </div>
+        <div class="pag">
+            <p style="text-align: center; font-size: 35px;">Монтаж <br> ролика</p>
+            <div style="width: 200px; height: 2px; background-color: #000;"></div>
+            <div class="butpos_price">    
+                <p style="margin-bottom:15px; text-align: center;font-size: 24px;">3 000 ₽</p>
+                <a class="but_yet_price" href="{% url 'contact' %}">Заказать</a>
+            </div>
+        </div>
+        <div class="pag">
+            <p style="text-align: center; font-size: 35px;">Съемки с <br> дрона</p>
+            <div style="width: 200px; height: 2px; background-color: #000;"></div>
+            <div class="butpos_price">    
+                <p style="margin-bottom:15px; text-align: center;font-size: 24px;">4 000<br> ₽/день</p>
+                <a class="but_yet_price" href="{% url 'contact' %}">Заказать</a>
+            </div>
+        </div>
+        <div class="pag">
+            <p style="text-align: center; font-size: 35px;">Работа с <br> графикой</p>
+            <div style="width: 200px; height: 2px; background-color: #000;"></div>
+            <div class="butpos_price">    
+                <p style="margin-bottom:15px; text-align: center;font-size: 24px;">7 500<br> ₽/день</p>
+                <a class="but_yet_price" href="{% url 'contact' %}">Заказать</a>
+            </div>
         </div>
     </div>
     <footer>

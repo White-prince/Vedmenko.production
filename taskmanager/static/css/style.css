@@ -274,11 +274,10 @@ input{
 /*Превью фото*/
 .photo{
     position: absolute;
-    top: 54%;
-    left: 60%;
-    background-color: white;
-    width: 350px;
-    height: 550px;
+    top: 50%;
+    left: 65%;
+    width: 800px;
+    height: 400px;
     transform: translate(-50%, -50%);
 }
 /*
@@ -364,9 +363,29 @@ footer{
     text-align: center;
 }
 .pag{
-    margin: 0;
+    float: left;
+    margin-top: 10px;
+    margin-right: 80px;
     width: 300px;
-    height: 400px;
+    height: 450px;
     background-color: #D0943A;
     color: #fff;
+}
+.but_yet_price{
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    border: solid 2px #131313;
+    border-radius: 90px;
+    transition: .05s linear;
+    padding: 10px;
+}
+a.but_yet_price:hover { background: #131313; }
+.butpos_price{
+    height: 70px;
+    width: 100px;
+    font-size: 16px;
+    position: relative;
+    bottom: -250px; 
 }
