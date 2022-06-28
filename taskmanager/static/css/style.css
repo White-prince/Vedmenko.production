@@ -30,13 +30,6 @@ body {
     background-size: 100%;
     zoom:100%;
 }
-/*Ссылки*/
-.lin{
-    user-select: none;
-    text-decoration: none;
-    color: #fff;
-}
-a.lin:hover {border-bottom: 1px double white;}
 /*Основа*/
 .container {
     height: 900px;
@@ -63,29 +56,6 @@ a.lin:hover {border-bottom: 1px double white;}
     padding-left: 360px;
     padding-right: 360px;
 }
-/*Видео*/
-.fullscreen-bg {
-    overflow: hidden;
-    z-index: -100;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    padding-top:45%;
-}
- 
-.fullscreen-bg__video {
-    position: absolute;
-    top: 10%;
-    left: 0;
-    width: 100%;
-}
-.videos{
-    float:left;
-    margin-top: 5%;
-    margin-left: 5px;
-    width: 420px; 
-    height: 240px;
-}
 /*Шапка*/
 .hat{
     height: 95px;
@@ -111,7 +81,6 @@ nav{
     margin-right: 5px;
     padding: 20px;
 }
-/*Кнопка*/
 .butpos{
     height: 100px;
     width: 500px;
@@ -154,7 +123,22 @@ a.but:hover { background: #D0943A; }
     justify-content: center;
 }
 a.but_yet:hover { background: #D0943A; }
-/*Коменты*/
+/*Видео*/
+.fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top:45%;
+}
+ 
+.fullscreen-bg__video {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+}
 .circul{
     padding: 5px;
     border-radius: 100px;
@@ -171,7 +155,6 @@ a.but_yet:hover { background: #D0943A; }
     padding: 1em;
     margin-bottom: 25px;
 }
-/*Текст*/
 .text{
     font-size: 36px;
     text-align:center;
@@ -193,8 +176,14 @@ a.but_yet:hover { background: #D0943A; }
     position: relative;
     z-index: 1;
 }
+.lin{
+    user-select: none;
+    text-decoration: none;
+    color: #fff;
+}
+a.lin:hover {border-bottom: 1px double white;}
 /*
-CSS портфолио
+Портфолио
 */
 .container_vid_port {
     height: 750px;
@@ -202,10 +191,16 @@ CSS портфолио
     padding-left: 300px;
     padding-right: 300px;
 }
+.videos{
+    float:left;
+    margin-top: 5%;
+    margin-left: 5px;
+    width: 420px; 
+    height: 240px;
+}
 /*
 Контакты css файл
 */
-/*Кнопка*/
 .button{
     margin-left: 280px;
     margin-bottom: 60px;
@@ -234,7 +229,6 @@ input{
     border: none;
     border: solid 0px #fff;
     }
-/*Соц-сети*/
 .container_soc {
     height: 840px;
     width: 100hw;
@@ -246,7 +240,6 @@ input{
     height: 65px;
     margin-right: 140px;
 }
-/*Текст*/
 .fore{
     font-size: 40px;
     top: 25%;
@@ -271,7 +264,6 @@ input{
 .tern{
     color: #D0943A;
 }
-/*Превью фото*/
 .photo{
     position: absolute;
     top: 50%;
@@ -279,32 +271,6 @@ input{
     width: 800px;
     height: 400px;
     transform: translate(-50%, -50%);
-}
-/*
-Отзовы css файл
-*/
-.content-comments {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.container-comments {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.comment {
-    display: inline-block;
-    width: 100%;
-    max-width: 300px;
-    height: 400px;
-    background-color: silver;
-    margin: 15px;
-}
-.comment_text {
-    height: 100px;
-    width: 150px;
-    color: black;
 }
 /*
 О нас CSS
@@ -355,13 +321,9 @@ input{
     float: right;
     font-size: 30px;
 }
-/*Подвал*/
-footer{
-    color: #fff;
-    padding-bottom: 1%;
-    width: 100%;
-    text-align: center;
-}
+/*
+Прайс
+*/
 .pag{
     float: left;
     margin-top: 10px;
@@ -370,6 +332,8 @@ footer{
     height: 450px;
     background-color: #D0943A;
     color: #fff;
+    padding-top: 30px;
+    text-align: center;
 }
 .but_yet_price{
     color: #fff;
@@ -384,8 +348,13 @@ footer{
 a.but_yet_price:hover { background: #131313; }
 .butpos_price{
     height: 70px;
-    width: 100px;
+    width: 300px;
     font-size: 16px;
-    position: relative;
-    bottom: -250px; 
+}
+/*Подвал*/
+footer{
+    color: #fff;
+    padding-bottom: 1%;
+    width: 100%;
+    text-align: center;
 }
