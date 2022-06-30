@@ -39,7 +39,7 @@ body {
 }
 .container_vid {
     margin-top: 50px;
-    height: 700px;
+    height: 550px;
     width: 100hw;
     padding-left: 300px;
     padding-right: 300px;
@@ -343,6 +343,13 @@ a.but_yet_price:hover { background: #131313; }
     height: 70px;
     width: 300px;
     font-size: 16px;
+}
+.sail{
+    color:black; 
+    margin-bottom:20px; 
+    margin-top: 15px; 
+    text-align: center;
+    font-size: 24px;
 }
 /*Подвал*/
 footer{
