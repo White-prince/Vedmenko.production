@@ -1,5 +1,5 @@
 /*
-Основной css файл
+Основной css
 */
 *{
     margin: 0 auto;
@@ -30,7 +30,7 @@ body {
     background-size: 100%;
     zoom:100%;
 }
-/*Основа*/
+/*Основа(containers)*/
 .container {
     height: 900px;
     width: 100hw;
@@ -53,7 +53,25 @@ body {
 .container_comment {
     height: 800px;
     width: 100hw;
-    padding-top: 100px;
+    padding-left: 360px;
+    padding-right: 360px;
+}
+.container_soc {
+    height: 840px;
+    width: 100hw;
+    padding-left: 360px;
+    padding-right: 360px;
+}
+.container_vid_port {
+    height: 750px;
+    width: 100hw;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.container_a {
+    margin-top: 50px;
+    height: 370px;
+    width: 100hw;
     padding-left: 360px;
     padding-right: 360px;
 }
@@ -93,11 +111,10 @@ nav{
     justify-content: center;
 }
 a.but {
+    position: relative;
+    top: 5%;
     font-size: 24px;
     z-index: 1;
-    position: relative;
-    height: 50px;
-    width: 300px;
     color: #fff;
     text-decoration: none;
     user-select: none;
@@ -186,12 +203,6 @@ a.lin:hover {border-bottom: 1px double white;}
 /*
 Портфолио
 */
-.container_vid_port {
-    height: 750px;
-    width: 100hw;
-    padding-left: 300px;
-    padding-right: 300px;
-}
 .videos{
     float:left;
     margin-top: 5%;
@@ -200,7 +211,7 @@ a.lin:hover {border-bottom: 1px double white;}
     height: 240px;
 }
 /*
-Контакты css файл
+Контакты
 */
 .button{
     margin-left: 280px;
@@ -222,19 +233,10 @@ a.lin:hover {border-bottom: 1px double white;}
     color: #fff;
 }
 .button:hover{background: #D0943A;}
-label{
-    font-size: 34px;
-}
 input{
     outline: none;
     border: none;
     border: solid 0px #fff;
-    }
-.container_soc {
-    height: 840px;
-    width: 100hw;
-    padding-left: 360px;
-    padding-right: 360px;
 }
 .vibe{
     width: 65px;
@@ -243,20 +245,15 @@ input{
 }
 .fore{
     font-size: 40px;
-    top: 25%;
-    left: 19%;
     padding-bottom: 20px;
 }
 .fore_n{
     font-size: 35px;
-    top: 25%;
-    left: 19%;
     padding-bottom: 50px;
 }
 .inp{
     font-size: 34px;
     margin-bottom: 100px;
-    margin-right: 700px;
     border-bottom: solid 2px #D0943A;
     padding-bottom: 10px;
     background-color: #131313;
@@ -267,22 +264,14 @@ input{
 }
 .photo{
     position: absolute;
-    top: 50%;
-    left: 65%;
+    top: 30%;
+    left: 45%;
     width: 800px;
     height: 400px;
-    transform: translate(-50%, -50%);
 }
 /*
 О нас CSS
 */
-.container_a {
-    margin-top: 50px;
-    height: 370px;
-    width: 100hw;
-    padding-left: 360px;
-    padding-right: 360px;
-}
 .leftimg {
     float:left;
     margin: 0 7px 7px 0;
@@ -327,7 +316,9 @@ input{
 */
 .pag{
     float: left;
-    margin-top: 10px;
+    margin-top: 150px;
+    padding-right: 10px;
+    padding-left: 10px;
     margin-left: 40px;
     margin-right: 30px;
     width: 320px;

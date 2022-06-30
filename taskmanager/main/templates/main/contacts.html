@@ -7,25 +7,25 @@ Vedmenko production
     <div class="container_soc">
         <div class="fore">КАК С НАМИ СВЯЗАТЬСЯ<span class="tern">?</span> ПРОСТО<span class="tern">!</span> </div>
         <div class="fore_n">ЗАДАЙТЕ СВОЙ ВОПРОС <span class="tern">:</span></div>
-    <form method="post">
-        {% csrf_token %}
-        <p><input class="inp" id="id_subject" type="text" name="name" placeholder="Ваше имя" maxlength="100" required /></p>
-        <p><input class="inp" type="text" name="sender" placeholder="E-mail" id="id_sender" required /></p>
-        <p><input class="inp" name="message" id="id_message" placeholder="Сообщение" maxlength="100" required /></p>
-        <input class="button" type="submit" value="Отправить" />
-    </form>
-    <div>
+        <form method="post">
+            {% csrf_token %}
+            <p><input class="inp" id="id_subject" type="text" name="name" placeholder="Ваше имя" maxlength="100" required /></p>
+            <p><input class="inp" type="text" name="sender" placeholder="E-mail" id="id_sender" required /></p>
+            <p><input class="inp" name="message" id="id_message" placeholder="Сообщение" maxlength="100" required /></p>
+            <input class="button" type="submit" value="Отправить" />
+        </form>
         <div>
-            <a href="###"><img class="vibe" src="{% static 'images/WSV.png' %}" alt="Whatsapp"></a>
-            <a href="###"><img class="vibe" src="{% static 'images/TGV.png' %}" alt="Telegram"></a>
-            <a href="https://vk.com/vedmenkoprod"><img class="vibe" src="{% static 'images/VKV.png' %}" alt="Vkontakte"></a>
+            <div>
+                <a href="###"><img class="vibe" src="{% static 'images/WSV.png' %}" alt="Whatsapp"></a>
+                <a href="###"><img class="vibe" src="{% static 'images/TGV.png' %}" alt="Telegram"></a>
+                <a href="https://vk.com/vedmenkoprod"><img class="vibe" src="{% static 'images/VKV.png' %}" alt="Vkontakte"></a>
+            </div>
         </div>
     </div>
-        <img class="photo" src="{% static 'images/unnamed.png' %}" alt="preview">
-    </div>
+    <img class="photo" src="{% static 'images/unnamed.png' %}" alt="preview">
     <footer>
         <div class="cop">
-            <p>&copy; 2022. All Rights Reserved. Design by <a class="lin" href="https://github.com/White-prince">White-prince.</a></p>
+            <p>&copy; 2022. All Rights Reserved. Design by <a class="lin" href="https://github.com/White-prince">White-prince</a>, <a class="lin" href="https://github.com/pinakoladaxd">pinaxd</a></p>
         </div>
     </footer>
 {% endblock %}
