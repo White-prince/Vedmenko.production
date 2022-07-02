@@ -7,13 +7,6 @@
     box-sizing: border-box;
 }
 @font-face {
-    font-family: 'Montserrat';
-    src: local('meta-normal'), local('meta-normal'),
-    url('fonts/MontserratThin.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'Montserrat_Bolt';
     src: local('meta-normal'), local('meta-normal'),
     url('fonts/MontserratMedium.ttf') format('truetype');
@@ -30,332 +23,3234 @@ body {
     background-size: 100%;
     zoom:100%;
 }
-/*Основа(containers)*/
-.container {
-    height: 900px;
-    width: 100hw;
-    padding-left: 360px;
-    padding-right: 360px;
+@media screen and (max-width: 2560px) {
+    /*Основа(containers)*/
+    .container {
+        height: 1400px;
+        width: 100hw;
+        padding-left: 360px;
+        padding-right: 360px;
+    }
+    .container_vid {
+        margin-top: 50px;
+        height: 550px;
+        width: 100hw;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    .container_com {
+        height: 950px;
+        width: 100hw;
+        padding-left: 500px;
+        padding-right: 500px;
+    }
+    .container_comment {
+        height: 1300px;
+        width: 100hw;
+        padding-left: 360px;
+        padding-right: 360px;
+    }
+    .container_soc {
+        height: 1200px;
+        width: 100hw;
+        padding-left: 360px;
+        padding-right: 360px;
+    }
+    .container_vid_port {
+        height: 800px;
+        width: 100hw;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    .container_a {
+        margin-top: 50px;
+        height: 370px;
+        width: 100hw;
+        padding-left: 360px;
+        padding-right: 360px;
+    }
+    /*Шапка*/
+    .hat{
+        height: 95px;
+        width: 100%;
+        padding-left: 360px;
+        padding-right: 360px;
+    }
+    .logo{
+        position: absolute;
+        top: 20px;
+        width: 300px;
+    }
+    nav{
+        position: absolute;
+        margin: 0;
+        padding: 4px;
+        top: 3%;
+        right: 20%;
+    }
+    .tp{
+        font-size: 26px;
+        display: inline;
+        margin-right: 5px;
+        padding: 20px;
+    }
+    .butpos{
+        height: 100px;
+        width: 500px;
+        font-size: 24px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    a.but {
+        position: relative;
+        top: 5%;
+        font-size: 24px;
+        z-index: 1;
+        color: #fff;
+        text-decoration: none;
+        user-select: none;
+        background: #131313;
+        outline: none;
+        border-radius: 90px;
+        transition: .05s linear;
+        padding: 15px;
+    }
+    a.but:hover { background: #D0943A; }
+    .but_yet{
+        height: 50px;
+        width: 400px;
+        color: #fff;
+        text-decoration: none;
+        user-select: none;
+        outline: none;
+        border: solid 2px #D0943A;
+        border-radius: 90px;
+        transition: .05s linear;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    a.but_yet:hover { background: #D0943A; }
+    /*Видео*/
+    .fullscreen-bg {
+        overflow: hidden;
+        z-index: -100;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding-top:45%;
+    }
+    .fullscreen-bg__video {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+    }
+    .circul{
+        padding: 5px;
+        border-radius: 100px;
+        width: 60px;
+        height: 60px;
+    }
+    .com{
+        margin-top: 20px;
+        margin-right: 5%;
+        background-color: white;
+        border-radius: 50px;
+        font-size: 24px;
+        color: #131313;
+        padding: 1em;
+        margin-bottom: 25px;
+    }
+    .text{
+        font-size: 36px;
+        text-align:center;
+    }
+    .m_text{
+        margin-top: 15%;
+        font-size: 50px;
+        position: relative;
+        z-index: 1;
+    }
+    .t_text{
+        font-size: 50px;
+        position: relative;
+        z-index: 1;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 24px;
+        position: relative;
+        z-index: 1;
+    }
+    .lin{
+        user-select: none;
+        text-decoration: none;
+        color: #fff;
+    }
+    a.lin:hover {border-bottom: 1px double white;}
+    /*
+    Портфолио
+    */
+    .videos{
+        float:left;
+        margin-top: 5%;
+        margin-left: 9%;
+        width: 420px; 
+        height: 240px;
+    }
+    /*
+    Контакты
+    */
+    .button{
+        margin-left: 330px;
+        margin-bottom: 60px;
+        font-size: 30px;
+        width: 400px;
+        height: 80px;
+        text-decoration: none;
+        user-select: none;
+        outline: none;
+        padding: .5em 1em;
+        border-radius: 90px;
+        border: solid 2px #D0943A;
+        transition: .05s linear;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #131313;
+        color: #fff;
+    }
+    .button:hover{background: #D0943A;}
+    input{
+        outline: none;
+        border: none;
+        border: solid 0px #fff;
+    }
+    .vibe{
+        width: 100px;
+        height: 100px;
+        margin-right: 200px;
+    }
+    .fore{
+        margin-top: 50px;
+        font-size: 54px;
+        padding-bottom: 20px;
+    }
+    .fore_n{
+        font-size: 50px;
+        padding-bottom: 50px;
+    }
+    .inp{
+        font-size: 60px;
+        margin-bottom: 100px;
+        border-bottom: solid 2px #D0943A;
+        padding-bottom: 10px;
+        background-color: #131313;
+        color: #fff;
+    }
+    .tern{
+        color: #D0943A;
+    }
+    .photo{
+        position: absolute;
+        top: 25%;
+        left: 45%;
+        width: 900px;
+        height: 450px;
+    }
+    /*
+    О нас CSS
+    */
+    .leftimg {
+        float:left;
+        margin: 0 7px 7px 0;
+        width: 250px;
+        height: 350px;
+    }
+    .rightimg  {
+        float: right;
+        margin: 0 0 7px 7px;
+        width: 250px;
+        height: 350px;
+    }
+    .vibe_a{
+        float: bottom;
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+    }
+    .follow{
+        float: right;
+        margin-top: 200px;
+    }
+    .text_a{
+        font-size: 36px;
+    }
+    .text_a_t{
+        font-size: 30px;
+    }
+    /*
+    Прайс
+    */
+    .pag{
+        float: left;
+        margin-top: 300px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 150px;
+        margin-right: 30px;
+        width: 370px;
+        height: 600px;
+        background-color: #D0943A;
+        color: #fff;
+        padding-top: 30px;
+        text-align: center;
+    }
+    .but_yet_price{
+        color: #fff;
+        text-decoration: none;
+        user-select: none;
+        outline: none;
+        border: solid 2px #131313;
+        border-radius: 90px;
+        transition: .05s linear;
+        padding: 10px;
+    }
+    a.but_yet_price:hover { background: #131313; }
+    .butpos_price{
+        margin-top: 30px;
+        height: 70px;
+        width: 300px;
+        font-size: 16px;
+    }
+    .sail{
+        color:black; 
+        margin-bottom: 15px; 
+        margin-top: 20px; 
+        text-align: center;
+        font-size: 24px;
+    }
+    h1{
+        margin-top: 50px;
+    }
+    .pad{
+        font-size: 32px;
+    }
+    .pad_text{
+        font-size: 23px;
+    }
+    /*Подвал*/
+    footer{
+        color: #fff;
+        padding-bottom: 1%;
+        width: 100%;
+        text-align: center;
+    }
 }
-.container_vid {
-    margin-top: 50px;
-    height: 550px;
-    width: 100hw;
-    padding-left: 300px;
-    padding-right: 300px;
+@media screen and (max-width: 1920px) {
+    /*Основа(containers)*/
+    .container {
+        height: 900px;
+        padding-left: 360px;
+        padding-right: 360px;
+    }
+    .container_vid {
+        margin-top: 50px;
+        height: 550px;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    .container_com {
+        height: 950px;
+        padding-left: 360px;
+        padding-right: 360px;
+    }
+    .container_comment {
+        height: 800px;
+        padding-left: 360px;
+        padding-right: 360px;
+    }
+    .container_soc {
+        height: 840px;
+        padding-left: 360px;
+        padding-right: 360px;
+    }
+    .container_vid_port {
+        height: 750px;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    .container_a {
+        margin-top: 50px;
+        height: 370px;
+        padding-left: 360px;
+        padding-right: 360px;
+    }
+    /*Шапка*/
+    .hat{
+        height: 95px;
+        padding-left: 360px;
+        padding-right: 360px;
+    }
+    .logo{
+        top: 15px;
+        width: 200px;
+    }
+    nav{
+        margin: 0;
+        padding: 4px;
+        top: 3%;
+        right: 20%;
+    }
+    .tp{
+        font-size: 20px;
+        margin-right: 5px;
+        padding: 20px;
+    }
+    .butpos{
+        height: 100px;
+        width: 500px;
+        font-size: 24px;
+    }
+    a.but {
+        top: 5%;
+        font-size: 24px;
+        padding: 15px;
+    }
+    .but_yet{
+        height: 50px;
+        width: 400px;
+        border-radius: 90px;
+        transition: .05s linear;
+        padding: 10px;
+    }
+    /*Видео*/
+    .fullscreen-bg {
+        padding-top:45%;
+    }
+    .fullscreen-bg__video {
+        top: 10%;
+    }
+    .circul{
+        padding: 5px;
+        border-radius: 100px;
+        width: 60px;
+        height: 60px;
+    }
+    .com{
+        margin-top: 20px;
+        margin-right: 5%;
+        border-radius: 50px;
+        font-size: 24px;
+        padding: 1em;
+        margin-bottom: 25px;
+    }
+    .text{
+        font-size: 36px;
+    }
+    .m_text{
+        margin-top: 15%;
+        font-size: 50px;
+    }
+    .t_text{
+        font-size: 50px;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 24px;
+    }
+    /*
+    Портфолио
+    */
+    .videos{
+        margin-top: 5%;
+        margin-left: 5px;
+        width: 420px; 
+        height: 240px;
+    }
+    /*
+    Контакты
+    */
+    .button{
+        margin-left: 280px;
+        margin-bottom: 60px;
+        font-size: 30px;
+        width: 220px;
+        height: 70px;
+        padding: .5em 1em;
+        border-radius: 90px;
+        transition: .05s linear;
+    }
+    .vibe{
+        width: 65px;
+        height: 65px;
+        margin-right: 140px;
+    }
+    .fore{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .fore_n{
+        font-size: 35px;
+        padding-bottom: 50px;
+    }
+    .inp{
+        font-size: 34px;
+        margin-bottom: 100px;
+        padding-bottom: 10px;
+    }
+    .photo{
+        top: 30%;
+        left: 45%;
+        width: 800px;
+        height: 400px;
+    }
+    /*
+    О нас CSS
+    */
+    .leftimg {
+        margin: 0 7px 7px 0;
+        width: 250px;
+        height: 350px;
+    }
+    .vibe_a{
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+    }
+    .follow{
+        margin-top: 200px;
+    }
+    .text_a{
+        font-size: 36px;
+    }
+    .text_a_t{
+        font-size: 30px;
+    }
+    /*
+    Прайс
+    */
+    .pag{
+        margin-top: 150px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 40px;
+        margin-right: 30px;
+        width: 320px;
+        height: 450px;
+        padding-top: 30px;
+    }
+    .but_yet_price{
+        border-radius: 90px;
+        transition: .05s linear;
+        padding: 10px;
+    }
+    .butpos_price{
+        margin-top: 30px;
+        height: 70px;
+        width: 300px;
+        font-size: 16px;
+    }
+    h1{
+        margin-top: 50px;
+    }
+    .pad{
+        font-size: 24px;
+    }
+    .pad_text{
+        font-size: 16px;
+    }
 }
-.container_com {
-    height: 950px;
-    width: 100hw;
-    padding-left: 360px;
-    padding-right: 360px;
-}
-.container_comment {
-    height: 800px;
-    width: 100hw;
-    padding-left: 360px;
-    padding-right: 360px;
-}
-.container_soc {
-    height: 840px;
-    width: 100hw;
-    padding-left: 360px;
-    padding-right: 360px;
-}
-.container_vid_port {
-    height: 750px;
-    width: 100hw;
-    padding-left: 300px;
-    padding-right: 300px;
-}
-.container_a {
-    margin-top: 50px;
-    height: 370px;
-    width: 100hw;
-    padding-left: 360px;
-    padding-right: 360px;
-}
-/*Шапка*/
-.hat{
-    height: 95px;
-    width: 100%;
-    padding-left: 360px;
-    padding-right: 360px;
-}
-.logo{
-    position: absolute;
-    top: 15px;
-    width: 200px;
-}
-nav{
-    position: absolute;
-    margin: 0;
-    padding: 4px;
-    top: 3%;
-    right: 20%;
-}
-.tp{
-    font-size: 20px;
-    display: inline;
-    margin-right: 5px;
-    padding: 20px;
-}
-.butpos{
-    height: 100px;
-    width: 500px;
-    font-size: 24px;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-a.but {
-    position: relative;
-    top: 5%;
-    font-size: 24px;
-    z-index: 1;
-    color: #fff;
-    text-decoration: none;
-    user-select: none;
-    background: #131313;
-    outline: none;
-    border-radius: 90px;
-    transition: .05s linear;
-    padding: 15px;
-}
-a.but:hover { background: #D0943A; }
-.but_yet{
+/*
+Мобильная версия
+*/
+@media screen and (max-width: 1900px) {
+    /*
+    Ноутбук 1800 - 1900
+    */
+    /*Шапка*/
+    .hat{
     height: 50px;
-    width: 400px;
-    color: #fff;
-    text-decoration: none;
-    user-select: none;
-    outline: none;
-    border: solid 2px #D0943A;
-    border-radius: 90px;
-    transition: .05s linear;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    }
+    .logo{
+        width: 250px;
+    }
+    .tp{
+        font-size: 26px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    nav{
+        padding: 1px;
+        top: 3%;
+        right: 200px;
+    }
+    /*Главная*/
+    .container {
+        height: 900px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 500px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 50px;
+        width: 420px; 
+        height: 240px;
+    }
+    /* О нас */
+    .container_a {
+        height: 380px;
+        padding-left: 200px;
+        padding-right: 200px;
+        margin-top: 10px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 1000px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .vibe{
+        width: 80px;
+        height: 80px;
+        margin-left: 15px;
+    }
+    .fore{
+        padding-top: 100px;
+        font-size: 52px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 50px;
+        padding-bottom: 50px;
+    }
+    .inp{
+        font-size: 50px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        top: 25%;
+        left: 47%;
+        width: 800px;
+        height: 400px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 240px;
+        margin-left: 200px;
+    }
+    .container_comment{
+        height: 1000px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        padding-top: 50px;
+        height: 800px;
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 48px;
+    }
+    .text_a_t{
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 48px;
+        position: relative;
+        z-index: 1;
+    }
+    .t_text{
+        font-size: 36px;
+        position: relative;
+        z-index: 1;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 28px;
+        position: relative;
+        z-index: 1;
+    }
+    .text {
+        font-size: 36px;
+        margin-top: 50px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 28px;
+        height: 50px;
+        width: 300px;
+    }
+    a.but {
+        font-size: 24px;    
+        top: 8%;
+        padding: 14px;
+    }
+    .butpos{
+        height: 100px;
+        width: 700px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        width: 500px;
+        height: 70px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 900px;
+        padding-left: 200px;
+        padding-right: 200px;
+    } 
 }
-a.but_yet:hover { background: #D0943A; }
-/*Видео*/
-.fullscreen-bg {
-    overflow: hidden;
-    z-index: -100;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    padding-top:45%;
+@media screen and (max-width: 1800px) {
+     /*
+     Ноутбук 1700 - 1800
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .logo{
+        width: 250px;
+    }
+    .tp{
+        font-size: 26px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    nav{
+        padding: 1px;
+        top: 3%;
+        right: 100px;
+    }
+    /*Главная*/
+    .container {
+        height: 850px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 500px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 120px;
+        width: 420px; 
+        height: 240px;
+    }
+    /* О нас */
+    .container_a {
+        height: 380px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 10px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 960px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .vibe{
+        width: 80px;
+        height: 80px;
+        margin-left: 15px;
+    }
+    .fore{
+        padding-top: 40px;
+        font-size: 52px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 50px;
+        padding-bottom: 50px;
+    }
+    .inp{
+        font-size: 50px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        top: 30%;
+        left: 45%;
+        width: 800px;
+        height: 400px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 200px;
+        margin-left: 170px;
+    }
+    .container_comment{
+        height: 960px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        padding-top: 50px;
+        height: 800px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 48px;
+    }
+    .text_a_t{
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 48px;
+        position: relative;
+        z-index: 1;
+    }
+    .t_text{
+        font-size: 36px;
+        position: relative;
+        z-index: 1;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 28px;
+        position: relative;
+        z-index: 1;
+    }
+    .text {
+        font-size: 36px;
+        margin-top: 50px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 28px;
+        height: 50px;
+        width: 300px;
+    }
+    a.but {
+        font-size: 24px;    
+        top: 8%;
+        padding: 14px;
+    }
+    .butpos{
+        height: 100px;
+        width: 700px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        width: 500px;
+        height: 70px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 900px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }  
 }
- 
-.fullscreen-bg__video {
-    position: absolute;
-    top: 10%;
-    left: 0;
-    width: 100%;
+@media screen and (max-width: 1700px) {
+    /*
+     Ноутбук 1600 - 1700
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .logo{
+        width: 200px;
+    }
+    .tp{
+        font-size: 20px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    nav{
+        padding: 1px;
+        top: 3%;
+        right: 100px;
+    }
+    /*Главная*/
+    .container {
+        height: 800px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 500px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 90px;
+        width: 420px; 
+        height: 240px;
+    }
+    /* О нас */
+    .container_a {
+        height: 380px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 10px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 870px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .vibe{
+        width: 80px;
+        height: 80px;
+        margin-left: 15px;
+    }
+    .fore{
+        padding-top: 40px;
+        font-size: 52px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 50px;
+        padding-bottom: 50px;
+    }
+    .inp{
+        font-size: 50px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        top: 35%;
+        left: 45%;
+        width: 600px;
+        height: 300px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 150px;
+        margin-left: 150px;
+    }
+    .container_comment{
+        height: 880px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        padding-top: 50px;
+        height: 800px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 48px;
+    }
+    .text_a_t{
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 48px;
+        position: relative;
+        z-index: 1;
+    }
+    .t_text{
+        font-size: 36px;
+        position: relative;
+        z-index: 1;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 28px;
+        position: relative;
+        z-index: 1;
+    }
+    .text {
+        font-size: 36px;
+        margin-top: 50px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 28px;
+        height: 50px;
+        width: 300px;
+    }
+    a.but {
+        font-size: 24px;    
+        top: 8%;
+        padding: 14px;
+    }
+    .butpos{
+        height: 100px;
+        width: 700px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        width: 500px;
+        height: 70px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 900px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }  
 }
-.circul{
-    padding: 5px;
-    border-radius: 100px;
-    width: 60px;
-    height: 60px;
+@media screen and (max-width: 1600px) {
+    /*
+     Ноутбук 1500 - 1600
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .logo{
+        width: 200px;
+    }
+    .tp{
+        font-size: 20px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    nav{
+        padding: 1px;
+        top: 3%;
+        right: 100px;
+    }
+    /*Главная*/
+    .container {
+        height: 800px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 500px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 70px;
+        width: 420px; 
+        height: 240px;
+    }
+    /* О нас */
+    .container_a {
+        height: 380px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 10px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 830px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .vibe{
+        width: 60px;
+        height: 60px;
+        margin-left: 15px;
+    }
+    .fore{
+        padding-top: 50px;
+        font-size: 46px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 46px;
+        padding-bottom: 50px;
+    }
+    .inp{
+        font-size: 42px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        top: 30%;
+        left: 45%;
+        width: 600px;
+        height: 300px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 150px;
+        margin-left: 120px;
+    }
+    .container_comment{
+        height: 820px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        padding-top: 50px;
+        height: 800px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 48px;
+    }
+    .text_a_t{
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 48px;
+        position: relative;
+        z-index: 1;
+    }
+    .t_text{
+        font-size: 36px;
+        position: relative;
+        z-index: 1;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 28px;
+        position: relative;
+        z-index: 1;
+    }
+    .text {
+        font-size: 36px;
+        margin-top: 50px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 28px;
+        height: 50px;
+        width: 300px;
+    }
+    a.but {
+        font-size: 24px;    
+        top: 8%;
+        padding: 14px;
+    }
+    .butpos{
+        height: 100px;
+        width: 700px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 26px;
+        width: 400px;
+        height: 60px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 900px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }   
 }
-.com{
-    margin-top: 20px;
-    margin-right: 5%;
-    background-color: white;
-    border-radius: 50px;
-    font-size: 24px;
-    color: #131313;
-    padding: 1em;
-    margin-bottom: 25px;
+@media screen and (max-width: 1500px) {
+    /*
+     Ноутбук 1400 - 1500
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .logo{
+        width: 200px;
+    }
+    .tp{
+        font-size: 20px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    nav{
+        padding: 1px;
+        top: 3%;
+        right: 100px;
+    }
+    /*Главная*/
+    .container {
+        height: 800px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 600px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 50px;
+        width: 420px; 
+        height: 240px;
+    }
+    /* О нас */
+    .container_a {
+        height: 380px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 10px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 760px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .vibe{
+        width: 60px;
+        height: 60px;
+        margin-left: 15px;
+    }
+    .fore{
+        padding-top: 30px;
+        font-size: 46px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 46px;
+        padding-bottom: 50px;
+    }
+    .inp{
+        font-size: 42px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        top: 30%;
+        left: 45%;
+        width: 600px;
+        height: 300px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+    .container_comment{
+        height: 750px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        padding-top: 50px;
+        height: 800px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 48px;
+    }
+    .text_a_t{
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 32px;
+        position: relative;
+        z-index: 1;
+    }
+    .t_text{
+        font-size: 28px;
+        position: relative;
+        z-index: 1;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    .text {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 20px;
+        height: 50px;
+        width: 300px;
+    }
+    a.but {
+        font-size: 18px;    
+        top: 8%;
+        padding: 14px;
+    }
+    .butpos{
+        height: 100px;
+        width: 700px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 26px;
+        width: 400px;
+        height: 60px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 900px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }   
 }
-.text{
-    font-size: 36px;
-    text-align:center;
+@media screen and (max-width: 1400px) {
+    /*
+     Ноутбук 1300 - 1400
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .logo{
+        width: 200px;
+    }
+    .tp{
+        font-size: 20px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    nav{
+        padding: 1px;
+        top: 3%;
+        right: 100px;
+    }
+    /*Главная*/
+    .container {
+        height: 700px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 1000px;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 21.5%;
+        width: 420px; 
+        height: 240px;
+    }
+    /* О нас */
+    .container_a {
+        height: 380px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 10px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 760px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .vibe{
+        width: 60px;
+        height: 60px;
+        margin-left: 15px;
+    }
+    .fore{
+        padding-top: 30px;
+        font-size: 46px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 46px;
+        padding-bottom: 50px;
+    }
+    .inp{
+        font-size: 42px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        top: 35%;
+        left: 55%;
+        width: 400px;
+        height: 200px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 50px;
+        margin-left: 500px;
+    }
+    .container_comment{
+        height: 1550px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        padding-top: 50px;
+        height: 1800px;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 26px;
+    }
+    .text_a_t{
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 32px;
+        position: relative;
+        z-index: 1;
+    }
+    .t_text{
+        font-size: 28px;
+        position: relative;
+        z-index: 1;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    .text {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 20px;
+        height: 50px;
+        width: 300px;
+    }
+    a.but {
+        font-size: 18px;    
+        top: 8%;
+        padding: 14px;
+    }
+    .butpos{
+        height: 100px;
+        width: 300px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 26px;
+        width: 400px;
+        height: 60px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 900px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }        
 }
-.m_text{
-    margin-top: 15%;
-    font-size: 50px;
-    position: relative;
-    z-index: 1;
+@media screen and (max-width: 1300px) {
+    /*
+     Ноутбук 1200 - 1300
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .logo{
+        width: 200px;
+    }
+    .tp{
+        font-size: 20px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    nav{
+        padding: 1px;
+        top: 3%;
+        right: 100px;
+    }
+    /*Главная*/
+    .container {
+        height: 650px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 1000px;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 17%;
+        width: 420px; 
+        height: 240px;
+    }
+    /* О нас */
+    .container_a {
+        height: 380px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 10px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 760px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .vibe{
+        width: 60px;
+        height: 60px;
+        margin-left: 15px;
+    }
+    .fore{
+        padding-top: 30px;
+        font-size: 46px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 46px;
+        padding-bottom: 50px;
+    }
+    .inp{
+        font-size: 42px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        top: 35%;
+        left: 55%;
+        width: 400px;
+        height: 200px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 50px;
+        margin-left: 450px;
+    }
+    .container_comment{
+        height: 1550px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        padding-top: 50px;
+        height: 1850px;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 26px;
+    }
+    .text_a_t{
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 32px;
+        position: relative;
+        z-index: 1;
+    }
+    .t_text{
+        font-size: 28px;
+        position: relative;
+        z-index: 1;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    .text {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 20px;
+        height: 50px;
+        width: 300px;
+    }
+    a.but {
+        font-size: 18px;    
+        top: 8%;
+        padding: 14px;
+    }
+    .butpos{
+        height: 100px;
+        width: 300px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 26px;
+        width: 400px;
+        height: 60px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 900px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }        
+} 
+@media screen and (max-width: 1200px) {
+    /* 
+    Ноутбук 1100-1200
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .logo{
+        width: 200px;
+    }
+    .tp{
+        font-size: 20px;
+        margin-right: 0px;
+        padding: 10px;
+    }
+    nav{
+        padding: 1px;
+        top: 3%;
+        right: 100px;
+    }
+    /*Главная*/
+    .container {
+        height: 600px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 1000px;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 12%;
+        width: 420px; 
+        height: 240px;
+    }
+    /* О нас */
+    .container_a {
+        height: 380px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 10px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 760px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .vibe{
+        width: 60px;
+        height: 60px;
+        margin-left: 15px;
+    }
+    .fore{
+        padding-top: 30px;
+        font-size: 46px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 46px;
+        padding-bottom: 50px;
+    }
+    .inp{
+        font-size: 42px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        top: 35%;
+        left: 55%;
+        width: 400px;
+        height: 200px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 50px;
+        margin-left: 400px;
+    }
+    .container_comment{
+        height: 1550px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        padding-top: 50px;
+        height: 1750px;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 26px;
+    }
+    .text_a_t{
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 32px;
+        position: relative;
+        z-index: 1;
+    }
+    .t_text{
+        font-size: 28px;
+        position: relative;
+        z-index: 1;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    .text {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 20px;
+        height: 50px;
+        width: 300px;
+    }
+    a.but {
+        font-size: 18px;    
+        top: 8%;
+        padding: 14px;
+    }
+    .butpos{
+        height: 100px;
+        width: 300px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 26px;
+        width: 400px;
+        height: 60px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 900px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+} 
+@media screen and (max-width: 1100px) {
+    /* 
+    планшет 1000 - 1100
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .logo{
+        width: 200px;
+    }
+    .tp{
+        font-size: 20px;
+        margin-right: 0px;
+        padding: 10px;
+    }
+    nav{
+        padding: 1px;
+        top: 3%;
+        right: 100px;
+    }
+    /*Главная*/
+    .container {
+        height: 550px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 1000px;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    .fullscreen-bg__video {
+        top: 12%;
+        left: 0;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 4%;
+        width: 420px; 
+        height: 240px;
+    }
+    /* О нас */
+    .container_a {
+        height: 380px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 10px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 760px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .vibe{
+        width: 60px;
+        height: 60px;
+        margin-left: 15px;
+    }
+    .fore{
+        padding-top: 30px;
+        font-size: 46px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 46px;
+        padding-bottom: 50px;
+    }
+    .inp{
+        font-size: 42px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        top: 45%;
+        left: 65%;
+        width: 300px;
+        height: 150px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 30px;
+        margin-left: 350px;
+    }
+    .container_comment{
+        height: 1500px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        padding-top: 50px;
+        height: 1800px;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 26px;
+    }
+    .text_a_t{
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 32px;
+        position: relative;
+        z-index: 1;
+    }
+    .t_text{
+        font-size: 28px;
+        position: relative;
+        z-index: 1;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    .text {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 20px;
+        height: 50px;
+        width: 300px;
+    }
+    a.but {
+        font-size: 18px;    
+        top: 8%;
+        padding: 14px;
+    }
+    .butpos{
+        height: 100px;
+        width: 300px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 26px;
+        width: 400px;
+        height: 60px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 900px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
-.t_text{
-    font-size: 50px;
-    position: relative;
-    z-index: 1;
+@media screen and (max-width: 1000px) {
+    /* 
+    планшет 900 - 1000
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .logo{
+        width: 200px;
+    }
+    .tp{
+        font-size: 18px;
+        margin-right: 0px;
+        padding: 10px;
+    }
+    nav{
+        padding: 1px;
+        top: 3%;
+        right: 100px;
+    }
+    /*Главная*/
+    .container {
+        height: 500px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 1000px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .fullscreen-bg__video {
+        top: 12%;
+        left: 0;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 28%;
+        width: 420px; 
+        height: 240px;
+    }
+    /* О нас */
+    .container_a {
+        height: 380px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 10px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 760px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .vibe{
+        width: 60px;
+        height: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .fore{
+        padding-top: 30px;
+        font-size: 46px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 46px;
+        padding-bottom: 50px;
+    }
+    .inp{
+        font-size: 42px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        width: 0px;
+        height: 0px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 40px;
+        margin-left: 300px;
+    }
+    .container_comment{
+        height: 1530px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        height: 1850px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 26px;
+    }
+    .text_a_t{
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 32px;
+        position: relative;
+        z-index: 1;
+    }
+    .t_text{
+        font-size: 28px;
+        position: relative;
+        z-index: 1;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    .text {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 20px;
+        height: 50px;
+        width: 300px;
+    }
+    a.but {
+        font-size: 18px;    
+        top: 8%;
+        padding: 14px;
+    }
+    .butpos{
+        height: 100px;
+        width: 300px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 26px;
+        width: 400px;
+        height: 60px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 1000px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
-.s_text{
-    margin-top: 1%;
-    font-size: 24px;
-    position: relative;
-    z-index: 1;
+@media screen and (max-width:900px) {
+    /* 
+    планшет 800 - 900
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .logo{
+        width: 200px;
+    }
+    .tp{
+        font-size: 18px;
+        margin-right: 0px;
+        padding: 10px;
+    }
+    nav{
+        padding: 1px;
+        top: 3%;
+        right: 1%;
+    }
+    /*Главная*/
+    .container {
+        height: 450px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 1000px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .fullscreen-bg__video {
+        top: 14%;
+        left: 0;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 25%;
+        width: 420px; 
+        height: 240px;
+    }
+    /* О нас */
+    .container_a {
+        height: 380px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 760px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .vibe{
+        width: 60px;
+        height: 60px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .fore{
+        padding-top: 30px;
+        font-size: 46px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 40px;
+        padding-bottom: 15px;
+    }
+    .inp{
+        font-size: 40px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        width: 0px;
+        height: 0px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 30px;
+        margin-left: 250px;
+    }
+    .container_comment{
+        height: 1500px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        height: 1800px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 26px;
+    }
+    .text_a_t{
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 32px;
+        position: relative;
+        z-index: 1;
+    }
+    .t_text{
+        font-size: 28px;
+        position: relative;
+        z-index: 1;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    .text {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 16px;
+        height: 50px;
+        width: 300px;
+    }
+    a.but {
+        font-size: 16px;    
+        top: 7%;
+        padding: 12px;
+    }
+    .butpos{
+        height: 100px;
+        width: 300px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 26px;
+        width: 400px;
+        height: 60px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 1000px;
+    }
 }
-.lin{
-    user-select: none;
-    text-decoration: none;
-    color: #fff;
+@media screen and (max-width: 800px) {
+    /* 
+    планшет 700 - 800
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .logo{
+        width: 200px;
+    }
+    .tp{
+        font-size: 18px;
+        margin-right: 0px;
+        padding: 10px;
+    }
+    nav{
+        padding: 1px;
+        top: 2%;
+        right: 1%;
+    }
+    /*Главная*/
+    .container {
+        height: 400px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 1000px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .fullscreen-bg__video {
+        top: 14.5%;
+        left: 0;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 22%;
+        width: 420px; 
+        height: 240px;
+    }
+    /* О нас */
+    .container_a {
+        height: 380px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 760px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .vibe{
+        width: 60px;
+        height: 60px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .fore{
+        padding-top: 30px;
+        font-size: 46px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 40px;
+        padding-bottom: 15px;
+    }
+    .inp{
+        font-size: 40px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        width: 0px;
+        height: 0px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+    .container_comment{
+        height: 1500px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        height: 1780px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 20px;
+    }
+    .text_a_t{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 32px;
+    }
+    .t_text{
+        font-size: 28px;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 20px;
+    }
+    .text {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 16px;
+        height: 50px;
+        width: 300px;
+    }
+    a.but {
+        font-size: 16px;    
+        top: 7%;
+        padding: 12px;
+    }
+    .butpos{
+        height: 100px;
+        width: 300px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 26px;
+        width: 400px;
+        height: 60px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 1000px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
-a.lin:hover {border-bottom: 1px double white;}
-/*
-Портфолио
-*/
-.videos{
-    float:left;
-    margin-top: 5%;
-    margin-left: 5px;
-    width: 420px; 
-    height: 240px;
+@media screen and (max-width: 700px) {
+    /* 
+    планшет 600 - 700
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .logo{
+        width: 150px;
+    }
+    .tp{
+        font-size: 16px;
+        margin-right: 0px;
+        padding: 10px;
+    }
+    nav{
+        padding: 1px;
+        top: 2%;
+        right: 1%;
+    }
+    /*Главная*/
+    .container {
+        height: 400px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 1000px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .fullscreen-bg__video {
+        top: 13%;
+        left: 0;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 18%;
+        width: 420px; 
+        height: 240px;
+    }
+    /* О нас */
+    .container_a {
+        height: 380px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 700px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .vibe{
+        width: 60px;
+        height: 60px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .fore{
+        padding-top: 10px;
+        font-size: 42px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 38px;
+        padding-bottom: 15px;
+    }
+    .inp{
+        font-size: 48px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        width: 0px;
+        height: 0px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 10px;
+        margin-left: 150px;
+    }
+    .container_comment{
+        height: 1420px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        height: 1750px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 20px;
+    }
+    .text_a_t{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 24px;
+    }
+    .t_text{
+        font-size: 20px;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 16px;
+    }
+    .text {
+        font-size: 24px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 16px;
+        height: 50px;
+        width: 300px;
+    }
+    a.but {
+        font-size: 14px;    
+        top: 5%;
+        padding: 10px;
+    }
+    .butpos{
+        height: 100px;
+        width: 300px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 26px;
+        width: 400px;
+        height: 60px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 1000px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}  
+@media screen and (max-width: 600px) {
+    /* 
+    телефоно 500 - 600
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .logo{
+        width: 150px;
+    }
+    .tp{
+        font-size: 14px;
+        margin-right: 0px;
+        padding: 1px;
+    }
+    nav{
+        padding: 1px;
+        top: 2%;
+        right: 1%;
+    }
+    /*Главная*/
+    .container {
+        height: 300px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 1000px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .fullscreen-bg__video {
+        top: 12%;
+        left: 0;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 12%;
+        width: 420px; 
+        height: 240px;
+    }
+    /* О нас */
+    .container_a {
+        height: 380px;
+        padding-left: 0px;
+        padding-right: 40px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 650px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .vibe{
+        width: 50px;
+        height: 50px;
+        margin-right: 55px;
+        margin-left: 40px;
+    }
+    .fore{
+        padding-top: 10px;
+        font-size: 36px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    .inp{
+        font-size: 40px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        width: 0px;
+        height: 0px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    .container_comment{
+        height: 1420px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        height: 1720px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 20px;
+    }
+    .text_a_t{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 24px;
+    }
+    .t_text{
+        font-size: 20px;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 16px;
+    }
+    .text {
+        font-size: 24px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 16px;
+        height: 50px;
+        width: 300px;
+    }
+    a.but {
+        font-size: 12px;    
+        top: 5%;
+        padding: 10px;
+    }
+    .butpos{
+        height: 100px;
+        width: 300px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 26px;
+        width: 350px;
+        height: 60px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 1000px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}   
+@media screen and (max-width: 500px) {
+    /* 
+    телефоно 400 - 500
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .logo{
+        width: 150px;
+    }
+    .tp{
+        font-size: 12px;
+        margin-right: 0px;
+        padding: 1px;
+    }
+    nav{
+        padding: 1px;
+        top: 2%;
+        right: 1%;
+    }
+    /*Главная*/
+    .container {
+        height: 300px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 800px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .fullscreen-bg__video {
+        top: 10%;
+        left: 0;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 22%;
+        width: 250px; 
+        height: 200px;
+    }
+    /* О нас */
+    .container_a {
+        height: 420px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 600px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .vibe{
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        margin-left: 50px;
+    }
+    .fore{
+        padding-top: 20px;
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    .inp{
+        font-size: 32px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        width: 0px;
+        height: 0px;
+    }
+    /* Прайс */
+    .pag{
+        height: 460px;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .container_comment{
+        height: 1450px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        height: 1500px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 20px;
+    }
+    .text_a_t{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 10%;
+        font-size: 16px;
+    }
+    .t_text{
+        font-size: 14px;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 12px;
+    }
+    .text {
+        font-size: 24px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 16px;
+        height: 50px;
+        width: 200px;
+    }
+    a.but {
+        font-size: 12px;    
+        top: 5%;
+        padding: 10px;
+    }
+    .butpos{
+        height: 100px;
+        width: 300px;
+        font-size: 24px;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 30px;
+        font-size: 24px;
+        width: 300px;
+        height: 60px;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 1100px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}    
+@media screen and (max-width: 400px) {
+    /* 
+    телефоно 300 - 400
+    */
+    /*Шапка*/
+    .hat{
+        height: 50px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .tp{
+        font-size: 10px;
+        margin-right: 0px;
+        padding: 1px;
+    }
+    nav{
+        padding: 1px;
+        top: 2%;
+        right: 1%;
+    }
+    /*Главная*/
+    .container {
+        height: 200px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 800px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .fullscreen-bg__video {
+        top: 9%;
+        left: 0;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 14%;
+        width: 250px; 
+        height: 200px;
+    }
+    /* О нас */
+    .container_a {
+        height: 420px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 600px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .vibe{
+        width: 50px;
+        height: 50px;
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+    .fore{
+        font-size: 26px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+    .inp{
+        font-size: 26px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        width: 0px;
+        height: 0px;
+    }
+    /* Прайс */
+    .pag{
+        height: 465px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .container_comment{
+        height: 1420px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        height: 1450px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 20px;
+    }
+    .text_a_t{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 5%;
+        font-size: 16px;
+    }
+    .t_text{
+        font-size: 14px;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 12px;
+    }
+    .text {
+        font-size: 24px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 14px;
+        height: 50px;
+        width: 150px;
+    }
+    a.but {
+        font-size: 10px;    
+        top: 5%;
+        padding: 8px;
+    }
+    .butpos{
+        height: 100px;
+        width: 300px;
+        font-size: 24px;
+        position: relative;
+        z-index: 1;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        width: 240px;
+        height: 50px;
+        padding: .5em 1em;
+        transition: .05s linear;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 1150px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
-/*
-Контакты
-*/
-.button{
-    margin-left: 280px;
-    margin-bottom: 60px;
-    font-size: 30px;
-    width: 220px;
-    height: 70px;
-    text-decoration: none;
-    user-select: none;
-    outline: none;
-    padding: .5em 1em;
-    border-radius: 90px;
-    border: solid 2px #D0943A;
-    transition: .05s linear;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #131313;
-    color: #fff;
-}
-.button:hover{background: #D0943A;}
-input{
-    outline: none;
-    border: none;
-    border: solid 0px #fff;
-}
-.vibe{
-    width: 65px;
-    height: 65px;
-    margin-right: 140px;
-}
-.fore{
-    font-size: 40px;
-    padding-bottom: 20px;
-}
-.fore_n{
-    font-size: 35px;
-    padding-bottom: 50px;
-}
-.inp{
-    font-size: 34px;
-    margin-bottom: 100px;
-    border-bottom: solid 2px #D0943A;
-    padding-bottom: 10px;
-    background-color: #131313;
-    color: #fff;
-}
-.tern{
-    color: #D0943A;
-}
-.photo{
-    position: absolute;
-    top: 30%;
-    left: 45%;
-    width: 800px;
-    height: 400px;
-}
-/*
-О нас CSS
-*/
-.leftimg {
-    float:left;
-    margin: 0 7px 7px 0;
-    width: 250px;
-    height: 350px;
-   }
-.rightimg  {
-    float: right;
-    margin: 0 0 7px 7px;
-    width: 250px;
-    height: 350px;
-   }
-.vibe_a{
-    float: bottom;
-    width: 60px;
-    height: 60px;
-    margin-right: 30px;
-}
-.follow{
-    margin-top: 200px;
-}
-.follow{
-    float: right;
-    margin-top: 200px;
-}
-.text_a{
-    font-size: 36px;
-}
-.text_a_t{
-    font-size: 30px;
-}
-.text_a_r{
-    float: right;
-    font-size: 36px;
-}
-.text_a_rt{
-    float: right;
-    font-size: 30px;
-}
-/*
-Прайс
-*/
-.pag{
-    float: left;
-    margin-top: 150px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-left: 40px;
-    margin-right: 30px;
-    width: 320px;
-    height: 450px;
-    background-color: #D0943A;
-    color: #fff;
-    padding-top: 30px;
-    text-align: center;
-}
-.but_yet_price{
-    color: #fff;
-    text-decoration: none;
-    user-select: none;
-    outline: none;
-    border: solid 2px #131313;
-    border-radius: 90px;
-    transition: .05s linear;
-    padding: 10px;
-}
-a.but_yet_price:hover { background: #131313; }
-.butpos_price{
-    margin-top: 30px;
-    height: 70px;
-    width: 300px;
-    font-size: 16px;
-}
-.sail{
-    color:black; 
-    margin-bottom: 15px; 
-    margin-top: 20px; 
-    text-align: center;
-    font-size: 24px;
-}
-/*Подвал*/
-footer{
-    color: #fff;
-    padding-bottom: 1%;
-    width: 100%;
-    text-align: center;
+@media screen and (max-width: 300px) {
+        /* 
+    телефоно 200 - 300
+    */
+    /*Шапка*/
+    .hat{
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .tp{
+        font-size: 10px;
+        margin-right: 0px;
+        padding: 1px;
+    }
+    nav{
+        padding: 1px;
+        top: 2%;
+        right: 1%;
+    }
+    /*Главная*/
+    .container {
+        height: 200px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .container_vid {
+        margin-top: 5px;
+        height: 800px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .fullscreen-bg__video {
+        top: 9%;
+        left: 0;
+    }
+    /*Видео*/
+    .videos{
+        margin-left: 14%;
+        width: 250px; 
+        height: 200px;
+    }
+    /* О нас */
+    .container_a {
+        height: 420px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    /* Контакты */
+    .container_soc {
+        height: 600px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .vibe{
+        width: 50px;
+        height: 50px;
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+    .fore{
+        font-size: 26px;
+        padding-bottom: 5px;
+    }
+    .fore_n{
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+    .inp{
+        font-size: 26px;
+        margin-bottom: 50px;
+        padding-bottom: 1px;
+    }
+    .photo{
+        width: 0px;
+        height: 0px;
+    }
+    /* Прайс */
+    .pag{
+        height: 465px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .container_comment{
+        height: 1420px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* Портфолио */
+    .container_vid_port {
+        height: 1450px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /*Текст*/
+    .text_a{
+        font-size: 20px;
+    }
+    .text_a_t{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .m_text{
+        margin-top: 5%;
+        font-size: 16px;
+    }
+    .t_text{
+        font-size: 14px;
+    }
+    .s_text{
+        margin-top: 1%;
+        font-size: 12px;
+    }
+    .text {
+        font-size: 24px;
+    }
+    /*Кнопки*/
+    .but_yet{
+        font-size: 14px;
+        height: 50px;
+        width: 150px;
+    }
+    a.but {
+        font-size: 10px;    
+        top: 5%;
+        padding: 8px;
+    }
+    .butpos{
+        height: 100px;
+        width: 300px;
+        font-size: 24px;
+        position: relative;
+        z-index: 1;
+    }
+    .button{
+        margin-left: 40px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        width: 240px;
+        height: 50px;
+        padding: .5em 1em;
+        transition: .05s linear;
+    }
+    /*Отзывы*/
+    .com{
+        margin-left: 5%;
+    }
+    .container_com {
+        height: 1150px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
