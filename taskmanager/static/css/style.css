@@ -80,6 +80,7 @@ body {
         position: absolute;
         top: 20px;
         width: 300px;
+        height: 97.5px;
     }
     nav{
         position: absolute;
@@ -400,6 +401,7 @@ body {
     .logo{
         top: 15px;
         width: 200px;
+        height: 65px;
     }
     nav{
         margin: 0;
@@ -566,21 +568,19 @@ body {
         font-size: 16px;
     }
 }
-/*
-Мобильная версия
-*/
 @media screen and (max-width: 1900px) {
     /*
     Ноутбук 1800 - 1900
     */
     /*Шапка*/
     .hat{
-    height: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
+        height: 50px;
+        padding-left: 200px;
+        padding-right: 200px;
     }
     .logo{
         width: 250px;
+        height: 81.25px;
     }
     .tp{
         font-size: 26px;
@@ -589,12 +589,12 @@ body {
     }
     nav{
         padding: 1px;
-        top: 3%;
+        top: 4%;
         right: 200px;
     }
     /*Главная*/
     .container {
-        height: 900px;
+        height: 1000px;
         padding-left: 200px;
         padding-right: 200px;
     }
@@ -603,6 +603,10 @@ body {
         height: 500px;
         padding-left: 200px;
         padding-right: 200px;
+    }
+    .fullscreen-bg__video {
+        top: 15%;
+        left: 0;
     }
     /*Видео*/
     .videos{
@@ -643,7 +647,7 @@ body {
         padding-bottom: 1px;
     }
     .photo{
-        top: 25%;
+        top: 40%;
         left: 47%;
         width: 800px;
         height: 400px;
@@ -666,6 +670,9 @@ body {
         padding-right: 200px;
         padding-left: 200px;
     }
+    .relac{
+        margin-top: 20px;
+    }
     /*Текст*/
     .text_a{
         font-size: 48px;
@@ -676,20 +683,14 @@ body {
     }
     .m_text{
         margin-top: 10%;
-        font-size: 48px;
-        position: relative;
-        z-index: 1;
+        font-size: 50px;
     }
     .t_text{
-        font-size: 36px;
-        position: relative;
-        z-index: 1;
+        font-size: 48px;
     }
     .s_text{
         margin-top: 1%;
-        font-size: 28px;
-        position: relative;
-        z-index: 1;
+        font-size: 32px;
     }
     .text {
         font-size: 36px;
@@ -702,8 +703,8 @@ body {
         width: 300px;
     }
     a.but {
-        font-size: 24px;    
-        top: 8%;
+        font-size: 32px;    
+        top: 6%;
         padding: 14px;
     }
     .butpos{
@@ -740,6 +741,7 @@ body {
     }
     .logo{
         width: 250px;
+        height: 81.25px;
     }
     .tp{
         font-size: 26px;
@@ -748,12 +750,12 @@ body {
     }
     nav{
         padding: 1px;
-        top: 3%;
+        top: 4%;
         right: 100px;
     }
     /*Главная*/
     .container {
-        height: 850px;
+        height: 950px;
         padding-left: 100px;
         padding-right: 100px;
     }
@@ -762,6 +764,10 @@ body {
         height: 500px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .fullscreen-bg__video {
+        top: 15%;
+        left: 0;
     }
     /*Видео*/
     .videos{
@@ -825,6 +831,10 @@ body {
         padding-right: 10px;
         padding-left: 10px;
     }
+    .relac{
+        margin-top: 0px;
+        margin-left: 90px;
+    }
     /*Текст*/
     .text_a{
         font-size: 48px;
@@ -836,19 +846,13 @@ body {
     .m_text{
         margin-top: 10%;
         font-size: 48px;
-        position: relative;
-        z-index: 1;
     }
     .t_text{
         font-size: 36px;
-        position: relative;
-        z-index: 1;
     }
     .s_text{
         margin-top: 1%;
         font-size: 28px;
-        position: relative;
-        z-index: 1;
     }
     .text {
         font-size: 36px;
@@ -899,6 +903,7 @@ body {
     }
     .logo{
         width: 200px;
+        height: 65px;
     }
     .tp{
         font-size: 20px;
@@ -907,7 +912,7 @@ body {
     }
     nav{
         padding: 1px;
-        top: 3%;
+        top: 4%;
         right: 100px;
     }
     /*Главная*/
@@ -921,6 +926,10 @@ body {
         height: 500px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .fullscreen-bg__video {
+        top: 13%;
+        left: 0;
     }
     /*Видео*/
     .videos{
@@ -984,6 +993,10 @@ body {
         padding-right: 10px;
         padding-left: 10px;
     }
+    .relac{
+        margin-top: 0px;
+        margin-left: 90px;
+    }
     /*Текст*/
     .text_a{
         font-size: 48px;
@@ -995,19 +1008,13 @@ body {
     .m_text{
         margin-top: 10%;
         font-size: 48px;
-        position: relative;
-        z-index: 1;
     }
     .t_text{
         font-size: 36px;
-        position: relative;
-        z-index: 1;
     }
     .s_text{
         margin-top: 1%;
         font-size: 28px;
-        position: relative;
-        z-index: 1;
     }
     .text {
         font-size: 36px;
@@ -1058,6 +1065,7 @@ body {
     }
     .logo{
         width: 200px;
+        height: 65px;
     }
     .tp{
         font-size: 20px;
@@ -1066,7 +1074,7 @@ body {
     }
     nav{
         padding: 1px;
-        top: 3%;
+        top: 4%;
         right: 100px;
     }
     /*Главная*/
@@ -1080,6 +1088,10 @@ body {
         height: 500px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .fullscreen-bg__video {
+        top: 13%;
+        left: 0;
     }
     /*Видео*/
     .videos{
@@ -1143,6 +1155,10 @@ body {
         padding-right: 10px;
         padding-left: 10px;
     }
+    .relac{
+        margin-top: 0px;
+        margin-left: 70px;
+    }
     /*Текст*/
     .text_a{
         font-size: 48px;
@@ -1154,19 +1170,13 @@ body {
     .m_text{
         margin-top: 10%;
         font-size: 48px;
-        position: relative;
-        z-index: 1;
     }
     .t_text{
         font-size: 36px;
-        position: relative;
-        z-index: 1;
     }
     .s_text{
         margin-top: 1%;
         font-size: 28px;
-        position: relative;
-        z-index: 1;
     }
     .text {
         font-size: 36px;
@@ -1180,7 +1190,7 @@ body {
     }
     a.but {
         font-size: 24px;    
-        top: 8%;
+        top: 6%;
         padding: 14px;
     }
     .butpos{
@@ -1217,6 +1227,7 @@ body {
     }
     .logo{
         width: 200px;
+        height: 65px;
     }
     .tp{
         font-size: 20px;
@@ -1225,7 +1236,7 @@ body {
     }
     nav{
         padding: 1px;
-        top: 3%;
+        top: 3.5%;
         right: 100px;
     }
     /*Главная*/
@@ -1239,6 +1250,10 @@ body {
         height: 600px;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .fullscreen-bg__video {
+        top: 13%;
+        left: 0;
     }
     /*Видео*/
     .videos{
@@ -1302,6 +1317,10 @@ body {
         padding-left: 0px;
         padding-right: 0px;
     }
+    .relac{
+        margin-top: 0px;
+        margin-left: 50px;
+    }
     /*Текст*/
     .text_a{
         font-size: 48px;
@@ -1313,19 +1332,13 @@ body {
     .m_text{
         margin-top: 10%;
         font-size: 32px;
-        position: relative;
-        z-index: 1;
     }
     .t_text{
         font-size: 28px;
-        position: relative;
-        z-index: 1;
     }
     .s_text{
         margin-top: 1%;
         font-size: 20px;
-        position: relative;
-        z-index: 1;
     }
     .text {
         font-size: 24px;
@@ -1339,7 +1352,7 @@ body {
     }
     a.but {
         font-size: 18px;    
-        top: 8%;
+        top: 6%;
         padding: 14px;
     }
     .butpos{
@@ -1376,6 +1389,7 @@ body {
     }
     .logo{
         width: 200px;
+        height: 65px;
     }
     .tp{
         font-size: 20px;
@@ -1398,6 +1412,10 @@ body {
         height: 1000px;
         padding-left: 300px;
         padding-right: 300px;
+    }
+    .fullscreen-bg__video {
+        top: 13%;
+        left: 0;
     }
     /*Видео*/
     .videos{
@@ -1461,6 +1479,10 @@ body {
         padding-left: 300px;
         padding-right: 300px;
     }
+    .relac{
+        margin-top: 0px;
+        margin-left: -195px;
+    }
     /*Текст*/
     .text_a{
         font-size: 26px;
@@ -1472,19 +1494,13 @@ body {
     .m_text{
         margin-top: 10%;
         font-size: 32px;
-        position: relative;
-        z-index: 1;
     }
     .t_text{
         font-size: 28px;
-        position: relative;
-        z-index: 1;
     }
     .s_text{
         margin-top: 1%;
         font-size: 20px;
-        position: relative;
-        z-index: 1;
     }
     .text {
         font-size: 24px;
@@ -1535,6 +1551,7 @@ body {
     }
     .logo{
         width: 200px;
+        height: 65px;
     }
     .tp{
         font-size: 20px;
@@ -1557,6 +1574,10 @@ body {
         height: 1000px;
         padding-left: 300px;
         padding-right: 300px;
+    }
+    .fullscreen-bg__video {
+        top: 13%;
+        left: 0;
     }
     /*Видео*/
     .videos{
@@ -1616,9 +1637,12 @@ body {
     /* Портфолио */
     .container_vid_port {
         padding-top: 50px;
-        height: 1850px;
+        height: 1800px;
         padding-left: 300px;
         padding-right: 300px;
+    }
+    .relac{
+        margin-left: -195px;
     }
     /*Текст*/
     .text_a{
@@ -1631,19 +1655,13 @@ body {
     .m_text{
         margin-top: 10%;
         font-size: 32px;
-        position: relative;
-        z-index: 1;
     }
     .t_text{
         font-size: 28px;
-        position: relative;
-        z-index: 1;
     }
     .s_text{
         margin-top: 1%;
         font-size: 20px;
-        position: relative;
-        z-index: 1;
     }
     .text {
         font-size: 24px;
@@ -1694,6 +1712,7 @@ body {
     }
     .logo{
         width: 200px;
+        height: 65px;
     }
     .tp{
         font-size: 20px;
@@ -1716,6 +1735,10 @@ body {
         height: 1000px;
         padding-left: 300px;
         padding-right: 300px;
+    }
+    .fullscreen-bg__video {
+        top: 13%;
+        left: 0;
     }
     /*Видео*/
     .videos{
@@ -1775,9 +1798,13 @@ body {
     /* Портфолио */
     .container_vid_port {
         padding-top: 50px;
-        height: 1750px;
-        padding-left: 300px;
-        padding-right: 300px;
+        height: 1050px;
+        padding-left: 00px;
+        padding-right: 0px;
+    }
+    .relac{
+        margin-top: 0px;
+        margin-left: 100px;
     }
     /*Текст*/
     .text_a{
@@ -1790,19 +1817,13 @@ body {
     .m_text{
         margin-top: 10%;
         font-size: 32px;
-        position: relative;
-        z-index: 1;
     }
     .t_text{
         font-size: 28px;
-        position: relative;
-        z-index: 1;
     }
     .s_text{
         margin-top: 1%;
         font-size: 20px;
-        position: relative;
-        z-index: 1;
     }
     .text {
         font-size: 24px;
@@ -1847,12 +1868,13 @@ body {
     */
     /*Шапка*/
     .hat{
-        height: 50px;
+        height: 100px;
         padding-left: 100px;
         padding-right: 100px;
     }
     .logo{
         width: 200px;
+        height: 65px;
     }
     .tp{
         font-size: 20px;
@@ -1902,10 +1924,12 @@ body {
     .vibe{
         width: 60px;
         height: 60px;
-        margin-left: 15px;
+        margin-left: 40px;
+        margin-right: 65px;
     }
     .fore{
-        padding-top: 30px;
+        margin-top: 0px;
+        padding-top: 0px;
         font-size: 46px;
         padding-bottom: 5px;
     }
@@ -1919,7 +1943,7 @@ body {
         padding-bottom: 1px;
     }
     .photo{
-        top: 45%;
+        top: 40%;
         left: 65%;
         width: 300px;
         height: 150px;
@@ -1938,9 +1962,13 @@ body {
     /* Портфолио */
     .container_vid_port {
         padding-top: 50px;
-        height: 1800px;
-        padding-left: 300px;
-        padding-right: 300px;
+        height: 970px;
+        padding-left: 60px;
+        padding-right: 0px;
+    }
+    .relac{
+        margin-top: 0px;
+        margin-left: 40px;
     }
     /*Текст*/
     .text_a{
@@ -1953,19 +1981,13 @@ body {
     .m_text{
         margin-top: 10%;
         font-size: 32px;
-        position: relative;
-        z-index: 1;
     }
     .t_text{
         font-size: 28px;
-        position: relative;
-        z-index: 1;
     }
     .s_text{
         margin-top: 1%;
         font-size: 20px;
-        position: relative;
-        z-index: 1;
     }
     .text {
         font-size: 24px;
@@ -2016,6 +2038,7 @@ body {
     }
     .logo{
         width: 200px;
+        height: 65px;
     }
     .tp{
         font-size: 18px;
@@ -2038,7 +2061,7 @@ body {
         padding-right: 0px;
     }
     .fullscreen-bg__video {
-        top: 12%;
+        top: 12.5%;
         left: 0;
     }
     /*Видео*/
@@ -2101,6 +2124,10 @@ body {
         padding-left: 0px;
         padding-right: 0px;
     }
+    .relac{
+        margin-top: 0px;
+        margin-left: 100px;
+    }
     /*Текст*/
     .text_a{
         font-size: 26px;
@@ -2112,19 +2139,13 @@ body {
     .m_text{
         margin-top: 10%;
         font-size: 32px;
-        position: relative;
-        z-index: 1;
     }
     .t_text{
         font-size: 28px;
-        position: relative;
-        z-index: 1;
     }
     .s_text{
         margin-top: 1%;
         font-size: 20px;
-        position: relative;
-        z-index: 1;
     }
     .text {
         font-size: 24px;
@@ -2175,6 +2196,7 @@ body {
     }
     .logo{
         width: 200px;
+        height: 65px;
     }
     .tp{
         font-size: 18px;
@@ -2259,6 +2281,11 @@ body {
     /* Портфолио */
     .container_vid_port {
         height: 1800px;
+
+    }
+    .relac{
+        margin-left: 10px;
+        margin-top: 0px;
     }
     /*Текст*/
     .text_a{
@@ -2271,19 +2298,13 @@ body {
     .m_text{
         margin-top: 10%;
         font-size: 32px;
-        position: relative;
-        z-index: 1;
     }
     .t_text{
         font-size: 28px;
-        position: relative;
-        z-index: 1;
     }
     .s_text{
         margin-top: 1%;
         font-size: 20px;
-        position: relative;
-        z-index: 1;
     }
     .text {
         font-size: 24px;
@@ -2326,12 +2347,13 @@ body {
     */
     /*Шапка*/
     .hat{
-        height: 50px;
+        height: 85px;
         padding-left: 1px;
         padding-right: 1px;
     }
     .logo{
-        width: 200px;
+        width: 200px;   
+        height: 65px;
     }
     .tp{
         font-size: 18px;
@@ -2340,7 +2362,7 @@ body {
     }
     nav{
         padding: 1px;
-        top: 2%;
+        top: 3.5%;
         right: 1%;
     }
     /*Главная*/
@@ -2369,12 +2391,12 @@ body {
     .container_a {
         height: 380px;
         padding-left: 10px;
-        padding-right: 10px;
+        padding-right: 0px;
         margin-top: 10px;
     }
     /* Контакты */
     .container_soc {
-        height: 760px;
+        height: 700px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -2385,7 +2407,8 @@ body {
         margin-left: 50px;
     }
     .fore{
-        padding-top: 30px;
+        margin-top: 0px;
+        padding-top: 0px;
         font-size: 46px;
         padding-bottom: 5px;
     }
@@ -2415,9 +2438,14 @@ body {
     }
     /* Портфолио */
     .container_vid_port {
-        height: 1780px;
+        padding-top: 0px;
+        height: 1720px;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .relac{
+        margin-top: 0px;
+        margin-left: 10px;
     }
     /*Текст*/
     .text_a{
@@ -2482,11 +2510,12 @@ body {
     /*Шапка*/
     .hat{
         height: 50px;
-        padding-left: 1px;
-        padding-right: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .logo{
         width: 150px;
+        height: 49px;
     }
     .tp{
         font-size: 16px;
@@ -2495,7 +2524,7 @@ body {
     }
     nav{
         padding: 1px;
-        top: 2%;
+        top: 3%;
         right: 1%;
     }
     /*Главная*/
@@ -2571,8 +2600,12 @@ body {
     /* Портфолио */
     .container_vid_port {
         height: 1750px;
-        padding-left: 0px;
         padding-right: 0px;
+        padding-top: 10px;
+    }
+    .relac{
+        margin-top: 0px;
+        margin-left: 10px;
     }
     /*Текст*/
     .text_a{
@@ -2585,13 +2618,16 @@ body {
     .m_text{
         margin-top: 10%;
         font-size: 24px;
+        margin-left: 10px;
     }
     .t_text{
         font-size: 20px;
+        margin-left: 10px;
     }
     .s_text{
         margin-top: 1%;
         font-size: 16px;
+        margin-left: 10px;
     }
     .text {
         font-size: 24px;
@@ -2606,6 +2642,7 @@ body {
         font-size: 14px;    
         top: 5%;
         padding: 10px;
+        margin-left: 10px;
     }
     .butpos{
         height: 100px;
@@ -2641,6 +2678,7 @@ body {
     }
     .logo{
         width: 150px;
+        height: 49px;
     }
     .tp{
         font-size: 14px;
@@ -2649,7 +2687,7 @@ body {
     }
     nav{
         padding: 1px;
-        top: 2%;
+        top: 3%;
         right: 1%;
     }
     /*Главная*/
@@ -2725,9 +2763,13 @@ body {
     }
     /* Портфолио */
     .container_vid_port {
+        padding-top: 10px;
         height: 1720px;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    h1{
+        margin-top: 0px;
     }
     /*Текст*/
     .text_a{
@@ -2796,6 +2838,7 @@ body {
     }
     .logo{
         width: 150px;
+        height: 49px;
     }
     .tp{
         font-size: 12px;
@@ -2804,7 +2847,7 @@ body {
     }
     nav{
         padding: 1px;
-        top: 2%;
+        top: 2.5%;
         right: 1%;
     }
     /*Главная*/
@@ -2820,8 +2863,7 @@ body {
         padding-right: 0px;
     }
     .fullscreen-bg__video {
-        top: 10%;
-        left: 0;
+        top: 13%;
     }
     /*Видео*/
     .videos{
@@ -2846,8 +2888,8 @@ body {
     .vibe{
         width: 50px;
         height: 50px;
-        margin-right: 10px;
-        margin-left: 50px;
+        margin-right: 70px;
+        margin-left: 0px;
     }
     .fore{
         padding-top: 20px;
@@ -2880,9 +2922,13 @@ body {
     }
     /* Портфолио */
     .container_vid_port {
-        height: 1500px;
+        padding-top: 10px;
+        height: 1450px;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    h1{
+        margin-top: 0px;
     }
     /*Текст*/
     .text_a{
@@ -2893,7 +2939,7 @@ body {
         margin-bottom: 50px;
     }
     .m_text{
-        margin-top: 10%;
+        margin-top: 13%;
         font-size: 16px;
     }
     .t_text{
@@ -2923,7 +2969,7 @@ body {
         font-size: 24px;
     }
     .button{
-        margin-left: 40px;
+        margin-left: 0px;
         margin-bottom: 30px;
         font-size: 24px;
         width: 300px;
@@ -2934,7 +2980,7 @@ body {
         margin-left: 5%;
     }
     .container_com {
-        height: 1100px;
+        height: 1000px;
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -2951,6 +2997,7 @@ body {
     }
     .logo{
         width: 100px;
+        height: 32px;
     }
     .tp{
         font-size: 10px;
@@ -3034,9 +3081,13 @@ body {
     }
     /* Портфолио */
     .container_vid_port {
-        height: 1450px;
+        padding-top: 0px;
+        height: 1400px;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    h1{
+        margin-top: 0px;
     }
     /*Текст*/
     .text_a{
@@ -3075,8 +3126,6 @@ body {
         height: 100px;
         width: 300px;
         font-size: 24px;
-        position: relative;
-        z-index: 1;
     }
     .button{
         margin-left: 40px;
@@ -3103,14 +3152,15 @@ body {
     */
     /*Шапка*/
     .hat{
-        padding-left: 1px;
-        padding-right: 1px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .logo{
         width: 100px;
+        height: 32px;
     }
     .tp{
-        font-size: 10px;
+        font-size: 8px;
         margin-right: 0px;
         padding: 1px;
     }
@@ -3137,15 +3187,15 @@ body {
     }
     /*Видео*/
     .videos{
-        margin-left: 14%;
+        margin-left: 5%;
         width: 250px; 
         height: 200px;
     }
     /* О нас */
     .container_a {
         height: 420px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 15px;
+        padding-right: 10px;
         margin-top: 10px;
         margin-bottom: 30px;
     }
@@ -3158,10 +3208,11 @@ body {
     .vibe{
         width: 50px;
         height: 50px;
-        margin-left: 30px;
+        margin-left: 10px;
         margin-right: 20px;
     }
     .fore{
+        margin-top: 0px;
         font-size: 26px;
         padding-bottom: 5px;
     }
@@ -3170,7 +3221,7 @@ body {
         padding-bottom: 15px;
     }
     .inp{
-        font-size: 26px;
+        font-size: 20px;
         margin-bottom: 50px;
         padding-bottom: 1px;
     }
@@ -3180,7 +3231,8 @@ body {
     }
     /* Прайс */
     .pag{
-        height: 465px;
+        width: 250px;
+        height: 490px;
         margin-top: 10px;
         margin-left: 0px;
     }
@@ -3189,11 +3241,29 @@ body {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .butpos_price{
+        margin-top: 30px;
+        height: 70px;
+        width: 200px;
+        font-size: 16px;
+    }
+    .but_yet_price{
+        border-radius: 90px;
+        transition: .05s linear;
+        padding: 10px;
+    }
+    .pad{
+        font-size: 20px;
+    }
     /* Портфолио */
     .container_vid_port {
         height: 1450px;
+        padding-top: 10px;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    h1{
+        margin-top: 0px;
     }
     /*Текст*/
     .text_a{
@@ -3205,14 +3275,14 @@ body {
     }
     .m_text{
         margin-top: 5%;
-        font-size: 16px;
+        font-size: 12px;
     }
     .t_text{
-        font-size: 14px;
+        font-size: 10px;
     }
     .s_text{
         margin-top: 1%;
-        font-size: 12px;
+        font-size: 8px;
     }
     .text {
         font-size: 24px;
@@ -3224,19 +3294,17 @@ body {
         width: 150px;
     }
     a.but {
-        font-size: 10px;    
-        top: 5%;
+        font-size: 8px;    
+        top: 3%;
         padding: 8px;
     }
     .butpos{
         height: 100px;
-        width: 300px;
+        width: 200px;
         font-size: 24px;
-        position: relative;
-        z-index: 1;
     }
     .button{
-        margin-left: 40px;
+        margin-left: 0px;
         margin-bottom: 50px;
         font-size: 20px;
         width: 240px;
