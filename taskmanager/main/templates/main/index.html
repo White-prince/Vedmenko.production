@@ -11,7 +11,7 @@ Vedmenko production
                 <p class="s_text">CОЗДАНИЕ ЭФФЕКТНЫХ ВИДЕОРОЛИКОВ <br> ДЛЯ ВАШЕГО БИЗНЕСА</p>
                 <a class="but" href="{% url 'contact' %}">Оставить заявку</a>
             <!--Видео ролик-->
-                <video autoplay muted loop class="fullscreen-bg__video">
+                <video poster="{%static 'images/preview_videos.png'%}" autoplay muted loop class="fullscreen-bg__video">
                     <source src="{% static 'videos/Web-video.mp4'%}" type="video/mp4">
                 </video>
             <!--Видео ролик-end-->    

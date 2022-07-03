@@ -2221,7 +2221,7 @@ body {
         padding-right: 0px;
     }
     .fullscreen-bg__video {
-        top: 14%;
+        top: 11%;
         left: 0;
     }
     /*Видео*/
@@ -2863,7 +2863,7 @@ body {
         padding-right: 0px;
     }
     .fullscreen-bg__video {
-        top: 13%;
+        top: 11%;
     }
     /*Видео*/
     .videos{
@@ -2874,7 +2874,7 @@ body {
     /* О нас */
     .container_a {
         height: 420px;
-        padding-left: 100px;
+        padding-left: 80px;
         padding-right: 100px;
         margin-top: 10px;
         margin-bottom: 30px;
@@ -2913,7 +2913,7 @@ body {
     .pag{
         height: 460px;
         margin-top: 20px;
-        margin-left: 50px;
+        margin-left: 40px;
     }
     .container_comment{
         height: 1450px;
@@ -2980,7 +2980,7 @@ body {
         margin-left: 5%;
     }
     .container_com {
-        height: 1000px;
+        height: 1030px;
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -3022,7 +3022,7 @@ body {
         padding-right: 0px;
     }
     .fullscreen-bg__video {
-        top: 9%;
+        top: 8%;
         left: 0;
     }
     /*Видео*/
@@ -3071,11 +3071,11 @@ body {
     /* Прайс */
     .pag{
         height: 465px;
-        margin-top: 10px;
-        margin-left: 0px;
+        margin-top: 15px;
+        margin-left: 10px;
     }
     .container_comment{
-        height: 1420px;
+        height: 1450px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -3141,7 +3141,7 @@ body {
         margin-left: 5%;
     }
     .container_com {
-        height: 1150px;
+        height: 1100px;
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -3160,13 +3160,13 @@ body {
         height: 32px;
     }
     .tp{
-        font-size: 8px;
+        font-size: 7px;
         margin-right: 0px;
         padding: 1px;
     }
     nav{
         padding: 1px;
-        top: 2%;
+        top: 1.5%;
         right: 1%;
     }
     /*Главная*/
